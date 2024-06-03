@@ -27,7 +27,7 @@ export function absoluteUrl(path: string) {
 export async function getGitHubStars(): Promise<number | null> {
   try {
     const response = await fetch(
-      "https://api.github.com/repos/pjborowiecki/SAASY-LAND-Next-14-Starters-With-Authentication-And-Database-Implemented",
+      "https://api.github.com/repos/wedao-latam/wedi-frontend",
       {
         headers: {
           Accept: "application/vnd.github+json",
