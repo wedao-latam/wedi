@@ -1,14 +1,15 @@
 "use client"
 
-import * as React from "react"
 import { submitContactForm } from "@/actions/email"
 import { zodResolver } from "@hookform/resolvers/zod"
+import * as React from "react"
 import { useForm } from "react-hook-form"
 
 import { contactFormSchema, type ContactFormInput } from "@/validations/email"
 
 import { useToast } from "@/hooks/use-toast"
 
+import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import {
   Form,
@@ -20,7 +21,6 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Icons } from "@/components/icons"
 
 export function ContactForm(): JSX.Element {
   const { toast } = useToast()
@@ -121,7 +121,7 @@ export function ContactForm(): JSX.Element {
 
         <Button
           variant="outline"
-          className="h-14 border bg-gradient-to-br from-pink-600/70 to-purple-400/70 text-lg font-bold tracking-wide hover:opacity-70"
+          className="h-14 border bg-gradient-to-br from-green-400/40 to-blue-800/60 text-lg font-bold tracking-wide hover:opacity-70"
         >
           {isPending && (
             <Icons.spinner

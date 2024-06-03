@@ -23,18 +23,18 @@ export const siteConfig = {
   links,
   url: "https://wedaolatam.com",
   ogImage: links.openGraphImage,
-  author: "pjborowiecki",
+  author: "broomva",
   hostingRegion: "fra1",
   keywords: ["SaaS", "Next.js", "Template"],
   navItems: [
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Features",
-      href: "/features",
-    },
+    // {
+    //   title: "About",
+    //   href: "/about",
+    // },
+    // {
+    //   title: "Features",
+    //   href: "/features",
+    // },
     {
       title: "Pricing",
       href: "/pricing",
@@ -104,31 +104,31 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Inspiration",
-      items: [
-        {
-          title: "Shadcn",
-          href: "https://ui.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Taxonomy",
-          href: "https://tx.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Skateshop",
-          href: "https://skateshop.sadmn.com/",
-          external: true,
-        },
-        {
-          title: "Acme Corp",
-          href: "https://acme-corp.jumr.dev/",
-          external: true,
-        },
-      ],
-    },
+    // {
+    //   title: "Inspiration",
+    //   items: [
+    //     {
+    //       title: "Shadcn",
+    //       href: "https://ui.shadcn.com/",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "Taxonomy",
+    //       href: "https://tx.shadcn.com/",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "Skateshop",
+    //       href: "https://skateshop.sadmn.com/",
+    //       external: true,
+    //     },
+    //     {
+    //       title: "Acme Corp",
+    //       href: "https://acme-corp.jumr.dev/",
+    //       external: true,
+    //     },
+    //   ],
+    // },
   ] satisfies NavItemFooter[],
 }
 

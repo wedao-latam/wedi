@@ -18,7 +18,7 @@ export function FAQSection() {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Frequently Asked{" "}
-              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-400 to-blue-800  bg-clip-text text-transparent">
                 Questions
               </span>
             </Balancer>

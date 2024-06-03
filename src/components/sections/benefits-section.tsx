@@ -19,7 +19,7 @@ export function BenefitsSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Why{" "}
-              <span className="relative bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
+              <span className="relative bg-gradient-to-r from-green-400 to-blue-800  bg-clip-text font-extrabold text-transparent">
                 Should You Care?
               </span>
             </Balancer>
