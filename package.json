@@ -131,7 +131,7 @@
     "vercel": "^34.2.4",
     "ws": "^8.17.0",
     "zod": "^3.23.8",
-    "zustand": "^4.5.2",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.0",
