@@ -10658,7 +10658,7 @@ rehype-parse@^9.0.0:
     hast-util-from-html "^2.0.0"
     unified "^11.0.0"
 
-rehype-pretty-code@^0.13.1:
+rehype-pretty-code@^0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/rehype-pretty-code/-/rehype-pretty-code-0.13.2.tgz#4c5a43bcaa060453c137490b8bbe5a06d9b8ee82"
   integrity sha512-F+PaFMscfJOcSHcR2b//+hk/0jT56hmGDqXcVD6VC9j0CUSGiqv8YxaWUyhR7qEIRRSbzAVxx+0uxzk+akXs+w==
