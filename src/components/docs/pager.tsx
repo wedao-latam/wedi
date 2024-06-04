@@ -1,10 +1,10 @@
-import Link from "next/link"
 import { type Doc } from "contentlayer/generated"
+import Link from "next/link"
 
+import { Icons } from "@/components/shared/icons"
+import { buttonVariants } from "@/components/ui/button"
 import { docsConfig } from "@/config/docs"
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/shared/icons"
 
 interface DocsPagerProps {
   doc: Doc
