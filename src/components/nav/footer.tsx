@@ -5,10 +5,10 @@ import { siteConfig } from "@/config/site"
 
 import { cn } from "@/lib/utils"
 
-import { buttonVariants } from "@/components/ui/button"
 import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form"
 import { Icons } from "@/components/icons"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { buttonVariants } from "@/components/ui/button"
 
 export function Footer(): JSX.Element {
   return (
@@ -49,8 +49,7 @@ export function Footer(): JSX.Element {
         <div className="hidden flex-col gap-4 sm:flex sm:w-1/3 xl:pl-24">
           <p className="text-sm font-medium leading-5 tracking-wide lg:text-base 2xl:text-lg">
             <Balancer>
-              Join our newsletter today to stay up to date on features and
-              important releases
+              Join our waitlist to get informed about the latest updates and news on our platform.
             </Balancer>
           </p>
 
@@ -68,10 +67,10 @@ export function Footer(): JSX.Element {
               rel="noreferrer"
               className="font-semibold underline-offset-8 transition-all hover:underline hover:opacity-70"
             >
-              Piotr Borowiecki.
+              Broomva Tech.
             </Link>{" "}
             <span className="hidden md:inline-flex">
-              Freely available under the MIT license. Enjoy :)
+              A WeDAO Lataml Fintech Cell, 2024. All rights reserved. Made with love in 🇨🇴 @wedao-latam | @broomva-tech
             </span>
           </Balancer>
         </p>

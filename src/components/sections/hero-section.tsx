@@ -79,7 +79,7 @@ export function HeroSection(): JSX.Element {
 
             {/* Fast-Track Your Business Launch with{" "}
             <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
-              SaaSy Land
+              Wedi
             </span> */}
           </Balancer>
         </h1>

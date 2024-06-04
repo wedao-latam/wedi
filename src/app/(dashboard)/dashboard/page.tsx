@@ -8,7 +8,7 @@ import { getCurrentUser } from "@/lib/session";
 import { constructMetadata } from "@/lib/utils";
 
 export const metadata = constructMetadata({
-  title: "Settings – SaaS Starter",
+  title: "Settings – Wedi",
   description: "Overview of your account and activities.",
 });
 
