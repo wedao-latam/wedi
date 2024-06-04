@@ -5,11 +5,6 @@ import { siteConfig } from "@/config/site"
 import auth from "@/lib/auth"
 import { cn } from "@/lib/utils"
 
-import { SignOutButton } from "@/components/auth/signout-button"
-import { Icons } from "@/components/icons"
-import { Navigation } from "@/components/nav/navigation"
-import { NavigationMobile } from "@/components/nav/navigation-mobile"
-import { ThemeToggle } from "@/components/theme-toggle"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import {
@@ -21,6 +16,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { SignOutButton } from "@/components/auth/signout-button"
+import { Icons } from "@/components/icons"
+import { Navigation } from "@/components/nav/navigation"
+import { NavigationMobile } from "@/components/nav/navigation-mobile"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export async function Header(): Promise<JSX.Element> {
   const session = await auth()
@@ -77,8 +77,8 @@ export async function Header(): Promise<JSX.Element> {
                   </DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
-                    <DropdownMenuItem asChild>
-                      <Link href="/dashboard">
+                    <DropdownMenuItem asChild disabled>
+                      <Link href="/dashboard/account">
                         <Icons.avatar
                           className="mr-2 size-4"
                           aria-hidden="true"
@@ -86,16 +86,7 @@ export async function Header(): Promise<JSX.Element> {
                         Account
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="/dashboard/billing">
-                        <Icons.settings
-                          className="mr-2 size-4"
-                          aria-hidden="true"
-                        />
-                        Billing
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
+                    <DropdownMenuItem asChild disabled>
                       <Link href="/dashboard/settings">
                         <Icons.settings
                           className="mr-2 size-4"

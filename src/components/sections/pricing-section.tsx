@@ -8,7 +8,6 @@ import { pricingPlans } from "@/data/pricing-plans"
 
 import { cn } from "@/lib/utils"
 
-import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -18,6 +17,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Switch } from "@/components/ui/switch"
+import { Icons } from "@/components/icons"
 
 export function PricingSection(): JSX.Element {
   const [yearlyBilling, setYearlyBilling] = React.useState<boolean>(false)
@@ -32,7 +32,7 @@ export function PricingSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               It&apos;s{" "}
-              <span className="bg-gradient-to-r from-green-400 to-blue-800  bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
                 Free Forever!
               </span>
             </Balancer>

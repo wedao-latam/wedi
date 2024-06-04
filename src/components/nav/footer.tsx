@@ -5,10 +5,10 @@ import { siteConfig } from "@/config/site"
 
 import { cn } from "@/lib/utils"
 
+import { buttonVariants } from "@/components/ui/button"
 import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form"
 import { Icons } from "@/components/icons"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { buttonVariants } from "@/components/ui/button"
 
 export function Footer(): JSX.Element {
   return (
@@ -68,10 +68,10 @@ export function Footer(): JSX.Element {
               rel="noreferrer"
               className="font-semibold underline-offset-8 transition-all hover:underline hover:opacity-70"
             >
-              Broomva Tech
+              Piotr Borowiecki.
             </Link>{" "}
             <span className="hidden md:inline-flex">
-              .  WeDAO Latam fintech cell. All rights reserved.
+              Freely available under the MIT license. Enjoy :)
             </span>
           </Balancer>
         </p>

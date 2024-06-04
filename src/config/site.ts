@@ -7,34 +7,34 @@ const site_url = env.NEXT_PUBLIC_APP_URL;
 
 const links = {
   github:
-    "https://github.com/wedao-latam/wedi-frontend",
-  twitter: "https://twitter.com/wedao_latam",
-  linkedin: "https://www.linkedin.com/in/wedao_latam",
+    "https://github.com/pjborowiecki/SAASY-LAND-Next-14-Starters-With-Authentication-And-Database-Implemented",
+  twitter: "https://twitter.com/pjborowiecki",
+  linkedin: "https://www.linkedin.com/in/pjborowiecki",
   discord: "",
-  authorsWebsite: "https://www.broomva.tech",
-  authorsGitHub: "https://github.com/broomva",
+  authorsWebsite: "https://pjborowiecki.com",
+  authorsGitHub: "https://github.com/pjborowiecki",
   openGraphImage: "https://wedaolatam.com/images/opengraph-image.png",
 }
 
 export const siteConfig = {
-  name: "Wedi",
+  name: "SaaSy Land",
   description:
     "An open-source starter for Next.js 14 full-stack projects with advanced authentication and several database configurations. The aim of this project is to provide a solid foundation for faster building and launching SaaS products, marketing sites, blogs, and more.",
   links,
   url: "https://wedaolatam.com",
   ogImage: links.openGraphImage,
-  author: "broomva",
+  author: "pjborowiecki",
   hostingRegion: "fra1",
   keywords: ["SaaS", "Next.js", "Template"],
   navItems: [
-    // {
-    //   title: "About",
-    //   href: "/about",
-    // },
-    // {
-    //   title: "Features",
-    //   href: "/features",
-    // },
+    {
+      title: "About",
+      href: "/about",
+    },
+    {
+      title: "Features",
+      href: "/features",
+    },
     {
       title: "Pricing",
       href: "/pricing",
@@ -104,31 +104,31 @@ export const siteConfig = {
         },
       ],
     },
-    // {
-    //   title: "Inspiration",
-    //   items: [
-    //     {
-    //       title: "Shadcn",
-    //       href: "https://ui.shadcn.com/",
-    //       external: true,
-    //     },
-    //     {
-    //       title: "Taxonomy",
-    //       href: "https://tx.shadcn.com/",
-    //       external: true,
-    //     },
-    //     {
-    //       title: "Skateshop",
-    //       href: "https://skateshop.sadmn.com/",
-    //       external: true,
-    //     },
-    //     {
-    //       title: "Acme Corp",
-    //       href: "https://acme-corp.jumr.dev/",
-    //       external: true,
-    //     },
-    //   ],
-    // },
+    {
+      title: "Inspiration",
+      items: [
+        {
+          title: "Shadcn",
+          href: "https://ui.shadcn.com/",
+          external: true,
+        },
+        {
+          title: "Taxonomy",
+          href: "https://tx.shadcn.com/",
+          external: true,
+        },
+        {
+          title: "Skateshop",
+          href: "https://skateshop.sadmn.com/",
+          external: true,
+        },
+        {
+          title: "Acme Corp",
+          href: "https://acme-corp.jumr.dev/",
+          external: true,
+        },
+      ],
+    },
   ] satisfies NavItemFooter[],
 }
 

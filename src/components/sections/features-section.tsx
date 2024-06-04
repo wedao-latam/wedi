@@ -1,8 +1,8 @@
 "use client"
 
-import { type Feature } from "@/types"
-import Image from "next/image"
 import * as React from "react"
+import Image from "next/image"
+import { type Feature } from "@/types"
 import Balancer from "react-wrap-balancer"
 
 import { features } from "@/data/features"
@@ -25,7 +25,7 @@ export function FeaturesSection() {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Discover Our <br />
-              <span className="bg-gradient-to-r from-green-400 to-blue-800  bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
                 Wholesome Features
               </span>
             </Balancer>
