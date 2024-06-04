@@ -2,10 +2,14 @@ import { linkOAuthAccount } from "@/actions/auth"
 import { getUserById } from "@/actions/user"
 import { prisma } from "@/config/db"
 import { PrismaAdapter } from "@auth/prisma-adapter"
+
 import NextAuth from "next-auth"
 
 import authConfig from "@/config/auth"
 import { env } from "@/env.mjs"
+
+import type { Adapter } from "@auth/core/adapters"
+
 
 export const {
   handlers: { GET, POST },
@@ -13,7 +17,7 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
-  adapter: PrismaAdapter(prisma),
+  adapter: PrismaAdapter(prisma) as Adapter,
   debug: env.NODE_ENV === "development",
   pages: {
     signIn: "/signin",
@@ -93,18 +97,6 @@ export const {
 })
 
 
-
-const CustomPrismaAdapter = (prisma) => {
-  const baseAdapter = PrismaAdapter(prisma)
-
-  return {
-    ...baseAdapter,
-    createUser: async (profile) => {
-      const user = await baseAdapter.createUser(profile)
-      return { ...user, role: 'default' } // Add the missing 'role' property
-    },
-  }
-}
 
 
 // const {

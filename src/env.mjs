@@ -15,7 +15,7 @@ export const env = createEnv({
     GITHUB_ID: z.string(),
     GITHUB_SECRET: z.string(),
     RESEND_API_KEY: z.string(),
-    RESEND_EMAIL_FROM: z.string().email(),
+    RESEND_EMAIL_FROM: z.string(),
     RESEND_EMAIL_TO: z.string().email(),
     RESEND_HOST: z.string(),
     RESEND_USERNAME: z.string(),
