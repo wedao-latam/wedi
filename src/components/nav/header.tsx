@@ -22,6 +22,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+
 export async function Header(): Promise<JSX.Element> {
   const session = await auth()
 
