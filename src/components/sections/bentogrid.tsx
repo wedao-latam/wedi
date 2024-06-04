@@ -27,7 +27,7 @@ export default function BentoGrid() {
                 </span>
               </div>
               <h2 className="mt-6 text-center font-heading text-3xl md:text-4xl lg:text-[40px]">
-                Customizable
+                Autonomous. AI Agent Backed
               </h2>
             </div>
           </div>
@@ -93,8 +93,7 @@ export default function BentoGrid() {
                   Secure by default
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit and vero voluptate. magnam magni doloribus
-                  dolores voluptates a sapiente nisi.
+                  SEC & GDPR Compliant
                 </p>
               </div>
             </div>
@@ -187,11 +186,10 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Faster than light
+                  Extensible and Fast Protocols built on top of Circle
                 </h2>
                 <p className="text-muted-foreground">
-                  Provident fugit vero voluptate. magnam magni doloribus dolores
-                  voluptates inventore nisi.
+                  USDC Stablecoin backed fund.
                 </p>
               </div>
             </div>
@@ -219,11 +217,10 @@ export default function BentoGrid() {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-lg font-medium text-foreground">
-                    Faster than light
+                    Thousands of transactions per second
                   </h2>
                   <p className="text-muted-foreground">
-                    Provident fugit vero voluptate. Voluptates a sapiente
-                    inventore nisi.
+                    Solana backed operation network. Scalable and cost effective transaction fees for all!
                   </p>
                 </div>
               </div>
@@ -304,11 +301,10 @@ export default function BentoGrid() {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-lg font-medium text-foreground">
-                    Keep your loved ones safe
+                    Full traceability on top of Blockchain
                   </h2>
                   <p className="text-muted-foreground">
-                    Voluptate. magnam magni doloribus dolores voluptates a
-                    sapiente.
+                    Ethereum, Solana, Aptos. Multisig Operations
                   </p>
                 </div>
               </div>

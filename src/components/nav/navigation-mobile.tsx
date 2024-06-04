@@ -1,17 +1,17 @@
 "use client"
 
-import * as React from "react"
+import type { NavItem } from "@/types"
 import Link from "next/link"
 import { useSelectedLayoutSegment } from "next/navigation"
-import type { NavItem } from "@/types"
+import * as React from "react"
 
 import { siteConfig } from "@/config/site"
 
 import { cn } from "@/lib/utils"
 
+import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Icons } from "@/components/icons"
 
 interface NavigationMobileProps {
   navItems: NavItem[]
@@ -68,7 +68,7 @@ export function NavigationMobile({ navItems }: NavigationMobileProps) {
             className="flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
-            <Icons.rocket className="mr-2 size-8" aria-hidden="true" />
+            <Icons.billing className="mr-2 size-8" aria-hidden="true" />
             <span className="text-2xl font-bold leading-none tracking-wide">
               {siteConfig.name}
             </span>

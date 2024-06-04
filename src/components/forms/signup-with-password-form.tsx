@@ -97,7 +97,7 @@ export function SignUpWithPasswordForm(): JSX.Element {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="tucorreo@gmail.com" {...field} />
+                <Input placeholder="your@email.com" {...field} />
               </FormControl>
               <FormMessage className="pt-2 sm:text-sm" />
             </FormItem>

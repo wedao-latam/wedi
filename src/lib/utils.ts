@@ -33,7 +33,7 @@ export async function getGitHubStars(): Promise<number | null> {
           Accept: "application/vnd.github+json",
         },
         next: {
-          revalidate: 60,
+          revalidate: 1200,
         },
       }
     )

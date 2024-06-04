@@ -2,7 +2,8 @@
 
 import { ContactSection } from "@/components/sections/contact-section";
 import { HeroSection } from "@/components/sections/hero-section";
-import { TechSection } from "@/components/sections/tech-section";
+// import { InfoLanding } from "@/components/sections/info-landing";
+import BentoGrid from "@/components/sections/bentogrid";
 
 import PreviewLanding from "@/components/sections/preview-landing";
 
@@ -15,7 +16,7 @@ export default function LandingPage(): JSX.Element {
 
             
 
-      <TechSection />
+      {/* <TechSection /> */}
 
 
 
@@ -23,7 +24,7 @@ export default function LandingPage(): JSX.Element {
 
       {/* <Features /> */}
 
-      {/* <BentoGrid /> */}
+      <BentoGrid />
 
      
 
@@ -43,6 +44,9 @@ export default function LandingPage(): JSX.Element {
 
 
       <PreviewLanding />
+
+
+
 
 
 

@@ -29,7 +29,7 @@ export function HeroSection(): JSX.Element {
         
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
-            Buy USDC and Spend like local with{" "}
+            Save and Pay with USDC Spend like local with{" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
             </span>
@@ -46,13 +46,13 @@ export function HeroSection(): JSX.Element {
             <Balancer>
               Join{" "}
               <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text text-transparent">
-                Our Waitlist
+                Our Waitlist!
               </span>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Earn your spot on the future of smart payments
+              Earn your spot on the future of smart payments with Wedi
             </Balancer>
           </h3>
         </div>

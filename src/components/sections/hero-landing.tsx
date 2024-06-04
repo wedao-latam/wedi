@@ -3,25 +3,24 @@ import Link from "next/link";
 import { Icons } from "@/components/shared/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import { env } from "@/env.mjs";
-import { cn, nFormatter } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
 export default async function HeroLanding() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/mickasmt/next-saas-stripe-starter",
-    {
-      ...(env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every hour
-      next: { revalidate: 3600 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
+  // const { stargazers_count: stars } = await fetch(
+  //   "https://api.github.com/repos/wedao-latam/wedi",
+  //   {
+  //     ...(env.GITHUB_OAUTH_TOKEN && {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //     }),
+  //     // data will revalidate every hour
+  //     next: { revalidate: 3600 },
+  //   },
+  // )
+  //   .then((res) => res.json())
+  //   .catch((e) => console.log(e));
 
   return (
     <section className="space-y-6 py-12 sm:py-20 lg:py-20">
@@ -84,7 +83,7 @@ export default async function HeroLanding() {
             <Icons.gitHub className="mr-2 size-4" />
             <p>
               <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-              <span className="font-semibold">{nFormatter(stars)}</span>
+              {/* <span className="font-semibold">{nFormatter(stars)}</span> */}
             </p>
           </Link>
         </div>

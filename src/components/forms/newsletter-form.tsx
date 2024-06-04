@@ -6,8 +6,8 @@ import * as React from "react"
 import { useForm } from "react-hook-form"
 
 import {
-  newsletterSignUpSchema,
-  type NewsletterSignUpFormInput,
+    newsletterSignUpSchema,
+    type NewsletterSignUpFormInput,
 } from "@/validations/newsletter"
 
 import { useToast } from "@/hooks/use-toast"
@@ -15,12 +15,12 @@ import { useToast } from "@/hooks/use-toast"
 import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 
@@ -86,7 +86,7 @@ export function NewsletterForm(): JSX.Element {
               <FormControl className="rounded-r-none">
                 <Input
                   type="email"
-                  placeholder="tucorreo@gmail.com"
+                  placeholder="your@email.com"
                   className="h-10 placeholder:text-xs md:h-12 md:placeholder:text-sm"
                   {...field}
                 />

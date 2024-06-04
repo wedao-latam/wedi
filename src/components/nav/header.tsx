@@ -33,7 +33,7 @@ export async function Header(): Promise<JSX.Element> {
           href="/"
           className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
         >
-          <Icons.rocket className="size-6 md:hidden lg:flex" />
+          <Icons.billing className="size-6 md:hidden lg:flex" />
           <span className="hidden md:flex">{siteConfig.name}</span>
         </Link>
         <Navigation navItems={siteConfig.navItems} />

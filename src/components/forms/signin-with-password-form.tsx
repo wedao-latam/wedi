@@ -115,7 +115,7 @@ export function SignInWithPasswordForm(): JSX.Element {
               <FormControl>
                 <Input
                   type="text"
-                  placeholder="tucorreo@gmail.com"
+                  placeholder="your@email.com"
                   {...field}
                 />
               </FormControl>
