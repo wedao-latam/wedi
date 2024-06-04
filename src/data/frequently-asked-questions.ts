@@ -31,7 +31,7 @@ export const frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
   {
     question: `I am confused with pricing`,
     answer: `Our product is completely free and open source. The pricing section is there to 
-              serve as an example of how you could set it up for your own SaaS product.
+              serve as an example of how you could set it up for your own Wedi product.
               We have no plans and no intentions to make this a paid product.`,
   },
   {

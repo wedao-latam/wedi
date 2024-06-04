@@ -5,9 +5,9 @@ import { siteConfig } from "@/config/site"
 
 import { cn, getGitHubStars } from "@/lib/utils"
 
+import { Icons } from "@/components/icons"
 import { Badge } from "@/components/ui/badge"
 import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
 
 export async function HeroSection() {
   const gitHubStars = await getGitHubStars()
@@ -41,7 +41,7 @@ export async function HeroSection() {
           <Balancer>
             Fast-Track Your Business Launch with{" "}
             <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
-              SaaSy Land
+              Wedi
             </span>
           </Balancer>
         </h1>

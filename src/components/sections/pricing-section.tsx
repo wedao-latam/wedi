@@ -8,6 +8,7 @@ import { pricingPlans } from "@/data/pricing-plans"
 
 import { cn } from "@/lib/utils"
 
+import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -17,7 +18,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Switch } from "@/components/ui/switch"
-import { Icons } from "@/components/icons"
 
 export function PricingSection(): JSX.Element {
   const [yearlyBilling, setYearlyBilling] = React.useState<boolean>(false)
@@ -41,7 +41,7 @@ export function PricingSection(): JSX.Element {
             <Balancer>
               {siteConfig.name} is completely free and open source. The pricing
               section is there to serve as an example of how you could set it up
-              for your own SaaS product. We have no plans and no intentions to
+              for your own Wedi product. We have no plans and no intentions to
               make this a paid product.
             </Balancer>
           </h3>
