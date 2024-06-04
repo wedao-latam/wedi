@@ -7,6 +7,10 @@ import BentoGrid from "@/components/sections/bentogrid";
 
 import PreviewLanding from "@/components/sections/preview-landing";
 
+
+
+
+
 export default function LandingPage(): JSX.Element {
   
   return (
@@ -25,6 +29,8 @@ export default function LandingPage(): JSX.Element {
       {/* <Features /> */}
 
       <BentoGrid />
+
+      
 
      
 

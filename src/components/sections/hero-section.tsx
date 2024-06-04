@@ -8,6 +8,18 @@ import Balancer from "react-wrap-balancer";
 
 import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form";
 
+// import { EvervaultCard } from "@/components/ui/evervault-card";
+
+
+// export function EvervaultCardDemo() {
+//   return (
+//     <div className="flex flex-col items-center mx-auto p-10 relative h-[20rem]">
+//       <EvervaultCard text="Save and Pay with USDC Spend like local with Wedi" />
+//     </div>
+//   );
+// }
+
+
 
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
@@ -25,8 +37,8 @@ export function HeroSection(): JSX.Element {
 					🚀 We're launching a new payments plaform! Join us!
 				</div>
 
-      
-        
+      {/* <EvervaultCardDemo /> */}
+
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
             Save and Pay with USDC Spend like local with{" "}
