@@ -1,6 +1,62 @@
+import {
+  AlertTriangle,
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  CreditCard,
+  File,
+  FileText,
+  HelpCircle,
+  Laptop,
+  Image as LucideImage,
+  MoreVertical,
+  Plus,
+  Search,
+  Trash
+} from "lucide-react"
+
+
 type IconProps = React.HTMLAttributes<SVGElement>
 
 export const Icons = {
+
+  add: Plus,
+  arrowRight: ArrowRight,
+  billing: CreditCard,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
+  // check: Check,
+  // close: X,
+  ellipsis: MoreVertical,
+
+  help: HelpCircle,
+  laptop: Laptop,
+  // logo: arcan_logo,
+  media: LucideImage,
+  // moon: Moon,
+  page: File,
+  post: FileText,
+  search: Search,
+  // settings: Settings,
+  // spinner: Loader2,
+  // sun: SunMedium,
+  trash: Trash,
+  // user: User,
+  warning: AlertTriangle,
+
+  // logo: ({ ...props }: LucideProps) => (
+  //   <svg 
+  //     width="10mm" 
+  //     height="10mm" 
+  //     viewBox="0 0 192 192"
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     {...props}
+  //   >
+
+
+  //   </svg>
+  // ),
+
   arrowLeft: (props: IconProps) => (
     <svg
       {...props}
