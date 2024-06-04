@@ -1,97 +1,36 @@
-// import Link from "next/link"
-// import Balancer from "react-wrap-balancer"
 
-// import { siteConfig } from "@/config/site"
+"use client";
+ 
+import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
 
-// import { cn, getGitHubStars } from "@/lib/utils"
+import { Icons } from "@/components/icons";
+import { Badge } from "@/components/ui/badge";
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { cn, getGitHubStars } from "@/lib/utils";
+import Link from "next/link";
+import Balancer from "react-wrap-balancer";
 
-// import { Icons } from "@/components/icons"
-// import { Badge } from "@/components/ui/badge"
-// import { buttonVariants } from "@/components/ui/button"
-
-// export async function HeroSection() {
-//   const gitHubStars = await getGitHubStars()
-
-//   return (
-//     <section
-//       id="hero-section"
-//       aria-label="hero section"
-//       className="mt-16 w-full md:mt-48"
-//     >
-//       <div className="container flex flex-col items-center gap-6 text-center">
-//         {gitHubStars ? (
-//           <Link
-//             href={siteConfig.links.github}
-//             target="_blank"
-//             rel="noreferrer"
-//             className="z-10"
-//           >
-//             <Badge
-//               variant="outline"
-//               aria-hidden="true"
-//               className="rounded-md px-3.5 py-1.5 text-sm transition-all duration-1000 ease-out hover:opacity-80 md:text-base md:hover:-translate-y-2"
-//             >
-//               <Icons.gitHub className="mr-2 size-3.5" aria-hidden="true" />
-//               {gitHubStars} Stars on GitHub
-//             </Badge>
-//             <span className="sr-only">GitHub</span>
-//           </Link>
-//         ) : null}
-//         <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-//           <Balancer>
-//             Fast-Track Your Business Launch with{" "}
-//             <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
-//               Wedi
-//             </span>
-//           </Balancer>
-//         </h1>
-
-//         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
-//           <Balancer>
-//             Your shortcut to startup success. The ultimate, modern, open-source
-//             Next.js template, with everything you need set up and ready to use.
-//           </Balancer>
-//         </h3>
-
-//         <div className="z-10 flex animate-fade-up flex-col justify-center gap-4 sm:flex-row">
-//           <Link
-//             href="/signup"
-//             className={cn(
-//               buttonVariants({ size: "lg" }),
-//               "transition-all duration-1000 ease-out md:hover:-translate-y-2"
-//             )}
-//           >
-//             Get Started
-//           </Link>
-
-//           <Link
-//             href={siteConfig.links.github}
-//             className={cn(
-//               buttonVariants({ variant: "outline", size: "lg" }),
-//               "transition-all duration-1000 ease-out md:hover:-translate-y-2"
-//             )}
-//           >
-//             See on GitHub
-//           </Link>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-
-import { Icons } from "@/components/icons"
-import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
-import { siteConfig } from "@/config/site"
-import { cn, getGitHubStars } from "@/lib/utils"
-import Link from "next/link"
-import Balancer from "react-wrap-balancer"
-
-import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form"
+import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form";
 
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
+
+  const placeholders = [
+    "What's the first rule of Fight Club?",
+    "Who is Tyler Durden?",
+    "Where is Andrew Laeddis Hiding?",
+    "Write a Javascript method to reverse a string",
+    "How to assemble your own PC?",
+  ];
+ 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("submitted");
+  };
   return (
     <section
       id="newsletter-section"
@@ -183,6 +122,18 @@ export function HeroSection(): JSX.Element {
           >
             See on GitHub
           </Link>
+          </div>
+
+
+          <div className="h-[40rem] flex flex-col justify-center  items-center px-4">
+            <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
+              Ask Aceternity UI Anything
+            </h2>
+            <PlaceholdersAndVanishInput
+              placeholders={placeholders}
+              onChange={handleChange}
+              onSubmit={onSubmit}
+            />
           </div>
         </div>
       </div>
