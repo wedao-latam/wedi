@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "wedi-frontend",
+  "name": "wedi",
   "description": "Wedi App",
   "version": "0.2.0",
   "license": "MIT",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wedao-latam/wedi-frontend"
+    "url": "https://github.com/wedao-latam/wedi"
   },
   "bugs": {
-    "url": "https://github.com/wedao-latam/wedi-frontend/issues"
+    "url": "https://github.com/wedao-latam/wedi/issues"
   },
   "type": "module",
   "scripts": {
     "dev": "contentlayer build && next dev --experimental-https",
-    "build": "contentlayer build &&  yarn prisma generate && yarn prisma migrate dev && next build",
+    "build": "contentlayer build && next build",
     "start": "next start",
     "postinstall": "pnpm prisma generate",
     "db:generate": "pnpm prisma generate",
