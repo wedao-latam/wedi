@@ -5,48 +5,30 @@ import { siteConfig } from "@/config/site"
 export const frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
   {
     question: `What is ${siteConfig.name}?`,
-    answer: `${siteConfig.name} is a modern, open sourced collection starter
-              templates for Next.js 14 full-stack projects. Built with Tailwind
-              CSS, ShadCn, Next-Auth and several databases. Branches contain
-              stand-alone set ups, including for serverless databases like
-              PostgreSQL with Neon and MySQL with PlanetScale, Drizzle ORM,
-              Prisma ORM v.5, but also MongoDB and Supabase.`,
+    answer: `${siteConfig.name} is a revolutionary solution for savings and spending in multiple currencies. It addresses the devaluation of local currencies and the need for a more stable and secure way to save and spend money. ${siteConfig.name} is a digital platform for payments and transaction processing, using stablecoins like USDC to purchase in any place while paying in local currency, reducing fees and speeding up the process.`,
   },
   {
-    question: `What is inlcuded ?`,
-    answer: `Several configuration options are available. Depending on which repo 
-              branch you clone and decide to use, you will have a full-stack project 
-              with advanced authentication (e.g., email verification, password reset, 
-              magic link sign in, OAuth social sign in with Google and Github), synchronized 
-              with a database of your choosing. On top of that, you will have a fully 
-              functional landing page, which is extremally easy to customize, Markdown 
-              and MDX-powered blog, documentation pages, Stripe payments integration, and more.`,
+    question: `What is included?`,
+    answer: `${siteConfig.name} includes a digital wallet that allows users to save and spend in multiple currencies using Circle API. The platform leverages thirdweb Account Abstractions for easy onboarding and is built around an AI assistant that personalizes interactions, data, and recommendations for each user, providing a unique and efficient way to manage their finances.`,
   },
   {
     question: `Why would I want to use ${siteConfig.name}?`,
-    answer: `Since everything is professionally pre-configured and up to the latest standards, 
-              you save a tremendous amount of time and effort, which you can now spend focusing 
-              on what really matters - building your own, unique product. And it's completely free!`,
+    answer: `With ${siteConfig.name}, you can protect your savings from local currency devaluation by using stablecoins. The platform offers a seamless and efficient way to make payments and transactions in multiple currencies, with reduced fees and faster processing times. The personalized AI assistant enhances your financial management experience, making it easier and more efficient.`,
   },
   {
     question: `I am confused with pricing`,
-    answer: `Our product is completely free and open source. The pricing section is there to 
-              serve as an example of how you could set it up for your own SaaS product.
-              We have no plans and no intentions to make this a paid product.`,
+    answer: `Using ${siteConfig.name} to manage your finances and make transactions is free. However, there might be minimal fees associated with currency conversions and transactions, depending on the specifics of your usage and the stablecoins you choose.`,
   },
   {
     question: `Is it easy to use? How do I get started?`,
-    answer: `${siteConfig.name} is extremely easy to use. You can get started by cloning a GitHub repo and following the documentation.`,
+    answer: `${siteConfig.name} is designed to be user-friendly. You can get started by signing up on the platform, which will guide you through setting up your digital wallet and making your first transactions. The onboarding process is streamlined with thirdweb Account Abstractions to ensure a smooth experience.`,
   },
   {
     question: `Can I get help and support?`,
-    answer: `Feel free to email us with any questions, or start a discussion on GitHub. While we are always happy to help, please keep in mind 
-        that this is a free product, which we develop out of passion in our free time and hence, we cannot guarantee any response times.`,
+    answer: `Yes, you can get help and support. Feel free to contact our support team through the platform for any questions or assistance you might need. We are committed to providing timely and helpful support to all our users.`,
   },
   {
     question: `Is the product actively maintained?`,
-    answer: `${siteConfig.name} is currently under active development. We are working on adding new features and improving the existing ones.
-        We are also working on improving the documentation and adding more examples. Stay tuned! You may also consider signing up for our waitlist 
-        to get notified about new major releases. We will not spam you, we promise!`,
+    answer: `Yes, ${siteConfig.name} is actively maintained. We are continuously working on adding new features, improving existing ones, and enhancing the overall user experience. Stay tuned for updates and new releases, and consider signing up for our newsletter to stay informed.`,
   },
 ]
