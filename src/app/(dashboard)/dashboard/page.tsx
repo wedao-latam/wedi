@@ -2,8 +2,6 @@ import { redirect } from "next/navigation";
 
 import { DashboardHeader } from "@/components/dashboard/header";
 import { DashboardShell } from "@/components/dashboard/shell";
-import { EmptyPlaceholder } from "@/components/shared/empty-placeholder";
-import { Button } from "@/components/ui/button";
 import { getCurrentUser } from "@/lib/session";
 import { constructMetadata } from "@/lib/utils";
 
@@ -21,10 +19,10 @@ export default async function DashboardPage() {
 
   return (
     <DashboardShell>
-      <DashboardHeader heading="Panel" text="Create and manage content.">
-        <Button>Fake button</Button>
+      <DashboardHeader heading="Wedi Dashboard" text="Review your account">
+        {/* <Button>Wedi</Button> */}
       </DashboardHeader>
-      <div>
+      {/* <div>
         <EmptyPlaceholder>
           <EmptyPlaceholder.Icon name="post" />
           <EmptyPlaceholder.Title>No content created</EmptyPlaceholder.Title>
@@ -33,7 +31,7 @@ export default async function DashboardPage() {
           </EmptyPlaceholder.Description>
           <Button variant="outline">Fake button</Button>
         </EmptyPlaceholder>
-      </div>
+      </div> */}
     </DashboardShell>
   );
 }
