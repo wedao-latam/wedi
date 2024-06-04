@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Body,
   Container,
@@ -10,9 +12,9 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
+} from "@react-email/components";
 
-import { env } from "@/env.mjs"
+import { env } from "@/env.mjs";
 
 export function NewsletterWelcomeEmail(): JSX.Element {
   const previewText = "Hello there! You're now on the Wedi waitlist!"

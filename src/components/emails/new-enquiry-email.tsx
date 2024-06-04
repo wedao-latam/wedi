@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Body,
   Container,
@@ -9,7 +11,7 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
+} from "@react-email/components";
 
 interface NewEnquiryEmailProps {
   name: string

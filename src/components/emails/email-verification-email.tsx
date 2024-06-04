@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Body,
   Button,
@@ -8,10 +10,10 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
+} from "@react-email/components";
 
-import { env } from "@/env.mjs"
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "@/config/site";
+import { env } from "@/env.mjs";
 
 interface EmailVerificationEmailProps {
   email: string

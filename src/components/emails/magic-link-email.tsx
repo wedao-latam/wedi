@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Body,
   Button,
@@ -8,9 +10,9 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
+} from "@react-email/components";
 
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "@/config/site";
 
 interface MagicLinkEmailProps {
   identifier: string

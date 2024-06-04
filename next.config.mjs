@@ -1,4 +1,10 @@
+import withBundleAnalyzer from '@next/bundle-analyzer';
 import { withContentlayer } from "next-contentlayer";
+
+// Initialize withBundleAnalyzer
+const bundleAnalyzer = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 import("./src/env.mjs");
 
@@ -8,6 +14,12 @@ const nextConfig = {
   pageExtensions: ["tsx", "mdx", "ts", "js"],
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  webpack: (config) => {
+    config.ignoreWarnings = [
+      /critical dependency:/,
+    ];
+    return config;
   },
   images: {
     remotePatterns: [
@@ -31,4 +43,5 @@ const nextConfig = {
   },
 };
 
-export default withContentlayer(nextConfig);
+// Combine all configurations
+export default withContentlayer(bundleAnalyzer(nextConfig));

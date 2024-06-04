@@ -54,7 +54,7 @@ export const EvervaultCard = ({
         <div className="relative z-10 flex items-center justify-center w-full">
           <div className="relative w-full text-center">
             <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-              Save and Pay in USDC Spend like local with{" "}
+              Save and Pay in USDC Spend local like a{" "}
               <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
                 Wedi
               </span>

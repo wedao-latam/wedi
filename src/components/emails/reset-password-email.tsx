@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Body,
   Button,
@@ -8,11 +10,11 @@ import {
   Section,
   Tailwind,
   Text,
-} from "@react-email/components"
+} from "@react-email/components";
 
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "@/config/site";
 
-import { absoluteUrl } from "@/lib/utils"
+import { absoluteUrl } from "@/lib/utils";
 
 interface ResetPasswordEmailProps {
   email: string
