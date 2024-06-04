@@ -19,7 +19,7 @@ const links = {
 export const siteConfig = {
   name: "Wedi",
   description:
-    "An open-source starter for Next.js 14 full-stack projects with advanced authentication and several database configurations. The aim of this project is to provide a solid foundation for faster building and launching SaaS products, marketing sites, blogs, and more.",
+    "Wedi is a digital platform leveraging stablecoins and AI to provide a secure, efficient solution for multi-currency savings, spending, and transactions, addressing local currency devaluation and offering personalized financial management.",
   links,
   url: "https://wedaolatam.com",
   ogImage: links.openGraphImage,
@@ -99,20 +99,6 @@ export const siteConfig = {
   ] satisfies NavItemFooter[],
 }
 
-
-
-// export const siteConfig: SiteConfig = {
-//   name: "Wedi",
-//   description:
-//     "Get your project off to an explosive start with Wedi Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
-//   url: site_url,
-//   ogImage: `${site_url}/og.jpg`,
-//   links: {
-//     twitter: "https://twitter.com/miickasmt",
-//     github: "https://github.com/wedao-latam/wedi-frontend",
-//   },
-//   mailSupport: "support@gowedi.com",
-// };
 
 export const footerLinks: SidebarNavItem[] = [
   {
