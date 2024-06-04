@@ -1,10 +1,10 @@
 
-"use client";
+// "use client";
 
 
-import { useCompletion } from 'ai/react';
+// import { useCompletion } from 'ai/react';
  
-import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
+// import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
 
 import { Icons } from "@/components/icons";
 import { Badge } from "@/components/ui/badge";
@@ -24,24 +24,7 @@ export function HeroSection(): JSX.Element {
   //   api: 'api/chat',
   // });
 
-  const { completion, input, handleInputChange, handleSubmit } = useCompletion();
-
-  const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis Hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
-  ];
- 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
-  };
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Create arcan session and open the vercel ai chat modal
-    console.log("submitted");
-  };
+  // const { completion, input, handleInputChange, handleSubmit } = useCompletion();
   return (
     <section
       id="newsletter-section"
@@ -100,7 +83,7 @@ export function HeroSection(): JSX.Element {
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Earn your spot on the smart future of payments
+              Earn your spot on the future of smart payments
             </Balancer>
           </h3>
         </div>
@@ -120,7 +103,7 @@ export function HeroSection(): JSX.Element {
 
         <div className="z-10 flex animate-fade-up flex-col justify-center gap-4 sm:flex-row">
           <Link
-            href="/signup"
+            href="/signin"
             className={cn(
               buttonVariants({ size: "lg" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2"
@@ -174,11 +157,11 @@ export function HeroSection(): JSX.Element {
             {/* <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
               Ask Aceternity UI Anything
             </h2> */}
-            <PlaceholdersAndVanishInput
+            {/* <PlaceholdersAndVanishInput
               placeholders={placeholders}
               onChange={handleInputChange}
               onSubmit={handleSubmit}
-            />
+            /> */}
           </div>
         </div>
       </div>

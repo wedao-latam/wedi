@@ -46,7 +46,7 @@ export const frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
   {
     question: `Is the product actively maintained?`,
     answer: `${siteConfig.name} is currently under active development. We are working on adding new features and improving the existing ones.
-        We are also working on improving the documentation and adding more examples. Stay tuned! You may also consider signing up for our newsletter 
+        We are also working on improving the documentation and adding more examples. Stay tuned! You may also consider signing up for our waitlist 
         to get notified about new major releases. We will not spam you, we promise!`,
   },
 ]

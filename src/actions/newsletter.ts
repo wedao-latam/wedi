@@ -1,8 +1,8 @@
 "use server"
 
-import { env } from "@/env.mjs"
 import { prisma } from "@/config/db"
 import { resend } from "@/config/email"
+import { env } from "@/env.mjs"
 import {
   checkIfSubscribedToNewsletterSchema,
   newsletterSignUpSchema,
@@ -28,7 +28,7 @@ export async function checkIfSubscribedToNewsletter(
     return subscribed ? true : false
   } catch (error) {
     console.error(error)
-    throw new Error("Error checking if already subscribed to newsletter")
+    throw new Error("Error checking if already subscribed to Waitlist")
   }
 }
 
@@ -51,13 +51,13 @@ export async function subscribeToNewsletter(
     const emailSent = await resend.emails.send({
       from: env.RESEND_EMAIL_FROM,
       to: validatedInput.data.email,
-      subject: "Welcome to our newsletter!",
+      subject: "Welcome to our Waitlist!",
       react: NewsletterWelcomeEmail(),
     })
 
     return newSubscriber && emailSent ? "success" : "error"
   } catch (error) {
     console.error(error)
-    throw new Error("Error subscribing to the newsletter")
+    throw new Error("Error subscribing to our Waitlist")
   }
 }

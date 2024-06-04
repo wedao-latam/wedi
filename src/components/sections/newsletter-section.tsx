@@ -15,13 +15,13 @@ export function NewsletterSection(): JSX.Element {
             <Balancer>
               Sing Up to{" "}
               <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
-                Our Newsletter
+                Our Waitlist
               </span>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Never miss a thing with our newsletter. We will send you updates
+              Never miss a thing. Join our waitlist. We will send you updates
               on major released or changes to the product. We will never spam
               you.
             </Balancer>

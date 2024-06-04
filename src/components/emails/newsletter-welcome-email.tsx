@@ -35,11 +35,11 @@ export function NewsletterWelcomeEmail(): JSX.Element {
                 Welcome to Wedi!
               </Heading>
               <Text className="mb-0 mt-6 text-center text-base">
-                {`We're`} so glad {`you're`} here. {`We're`} excited to share
-                our passion for online startups with you.
+                {`We're`} so glad {`you're`} here!
               </Text>
               <Text className="m-0 text-center text-base">
-                {`We'll`} be sending you a newsletter every month.
+                {`We're`} excited to share
+                our passion on revolutionary smart payments with you!.
               </Text>
             </Section>
 
@@ -55,7 +55,7 @@ export function NewsletterWelcomeEmail(): JSX.Element {
                 </Link>
               </Text>
               <Text className="mb-0 mt-4">
-                @ wedaolatam.com {new Date().getFullYear()}
+                @wedaolatam.com {new Date().getFullYear()}
               </Text>
             </Section>
           </Container>

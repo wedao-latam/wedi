@@ -6,12 +6,12 @@ import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
+    Form,
+    FormControl,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
@@ -53,7 +53,7 @@ export function NewsletterForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subscribe to our newsletter</FormLabel>
+              <FormLabel>Subscribe to our Waitlist</FormLabel>
               <FormControl>
                 <Input
                   type="email"
