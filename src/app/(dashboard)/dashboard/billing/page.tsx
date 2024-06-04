@@ -10,7 +10,7 @@ import { getUserSubscriptionPlan } from "@/lib/subscription";
 import { constructMetadata } from "@/lib/utils";
 
 export const metadata = constructMetadata({
-  title: "Billing – Wedi",
+  title: "Billing – SaaS Starter",
   description: "Manage billing and your subscription plan.",
 });
 
@@ -34,7 +34,7 @@ export default async function BillingPage() {
           <Icons.warning />
           <AlertTitle>This is a demo app.</AlertTitle>
           <AlertDescription>
-            Wedi app is a demo app using a Stripe test environment. You
+            SaaS Starter app is a demo app using a Stripe test environment. You
             can find a list of test card numbers on the{" "}
             <a
               href="https://stripe.com/docs/testing#cards"

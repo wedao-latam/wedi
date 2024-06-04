@@ -5,7 +5,7 @@ import { getUserSubscriptionPlan } from "@/lib/subscription";
 import { constructMetadata } from "@/lib/utils";
 
 export const metadata = constructMetadata({
-  title: "Pricing – Wedi",
+  title: "Pricing – SaaS Starter",
   description: "Explore our subscription plans.",
 });
 

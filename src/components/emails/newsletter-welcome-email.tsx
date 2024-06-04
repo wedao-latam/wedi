@@ -1,26 +1,26 @@
 import {
-  Body,
-  Container,
-  Head,
-  Heading,
-  Hr,
-  Html,
-  Link,
-  Preview,
-  Section,
-  Tailwind,
-  Text,
+    Body,
+    Container,
+    Head,
+    Heading,
+    Hr,
+    Html,
+    Link,
+    Preview,
+    Section,
+    Tailwind,
+    Text,
 } from "@react-email/components"
 
 import { env } from "@/env.mjs"
 
 export function NewsletterWelcomeEmail(): JSX.Element {
-  const previewText = "Hello and welcome to Wedi!"
+  const previewText = "Hello and welcome to SaaSy Land!"
 
   return (
     <Html>
       <Head>
-        <title>Wedi Newsletter</title>
+        <title>SaaSy Land Newsletter</title>
       </Head>
       <Preview>{previewText}</Preview>
       <Tailwind>
@@ -28,11 +28,11 @@ export function NewsletterWelcomeEmail(): JSX.Element {
           <Container className="mx-auto my-[40px] max-w-2xl rounded p-4">
             <Section className="mt-4">
               <Heading className="text-center text-2xl font-semibold text-zinc-950">
-                Wedi
+                SaaSy Land
               </Heading>
               <Hr className="my-4" />
               <Heading className="text-center text-3xl font-semibold text-zinc-800">
-                Welcome to Wedi!
+                Welcome to SaaSy Land!
               </Heading>
               <Text className="mb-0 mt-6 text-center text-base">
                 {`We're`} so glad {`you're`} here. {`We're`} excited to share

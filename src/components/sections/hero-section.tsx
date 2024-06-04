@@ -11,7 +11,13 @@ import { cn, getGitHubStars } from "@/lib/utils";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
+<<<<<<< HEAD
 import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form";
+=======
+import { Badge } from "@/components/ui/badge"
+import { buttonVariants } from "@/components/ui/button"
+import { Icons } from "@/components/icons"
+>>>>>>> parent of 596e40c (fix: updated names)
 
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
@@ -61,9 +67,15 @@ export function HeroSection(): JSX.Element {
         
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
+<<<<<<< HEAD
             Buy USDC and Spend like local with{" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
+=======
+            Fast-Track Your Business Launch with{" "}
+            <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
+              SaaSy Land
+>>>>>>> parent of 596e40c (fix: updated names)
             </span>
           </Balancer>
         </h1>

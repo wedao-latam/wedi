@@ -178,9 +178,9 @@ export function PricingCards({ userId, subscriptionPlan }: PricingCardsProps) {
           Email{" "}
           <a
             className="font-medium text-primary hover:underline"
-            href="mailto:support@gowedi.com.com"
+            href="mailto:support@saas-starter.com"
           >
-            support@gowedi.com.com
+            support@saas-starter.com
           </a>{" "}
           for to contact our support team.
           <br />
