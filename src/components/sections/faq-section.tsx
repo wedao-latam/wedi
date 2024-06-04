@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-export function FAQSection() {
+export default function FAQSection() {
   return (
     <section id="faq-section" aria-label="faq section" className="w-full">
       <div className="container grid max-w-6xl gap-8 md:gap-16">

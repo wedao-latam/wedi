@@ -86,7 +86,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
         <SmoothScrollProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >

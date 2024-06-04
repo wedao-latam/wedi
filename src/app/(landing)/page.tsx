@@ -9,7 +9,7 @@ import PreviewLanding from "@/components/sections/preview-landing";
 export default function LandingPage(): JSX.Element {
   
   return (
-    <div className="grid w-full grid-cols-1 items-center justify-center gap-16 md:gap-32">
+    <div className="grid w-full grid-cols-1 items-center justify-center gap-8s md:gap-8">
       <HeroSection />
 
 

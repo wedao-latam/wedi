@@ -13,7 +13,7 @@
 //     await resend.emails.send({
 //       from: 'Acme <hi@gowedi.com>',
 //       to: email as string,
-//       subject: `Welcome to Wedi! You're one step closer to have smart payment options!`,
+//       subject: `Welcome to Wedi You're one step closer to have smart payment options!`,
 //       react: WelcomeEmail({ name }),
 //     })
 //   } catch (error) {

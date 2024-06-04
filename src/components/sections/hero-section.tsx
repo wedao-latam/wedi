@@ -1,11 +1,3 @@
-
-// "use client";
-
-
-// import { useCompletion } from 'ai/react';
- 
-// import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
-
 import { Icons } from "@/components/icons";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -20,11 +12,6 @@ import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form"
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
 
-  // const { messages, input: chatInput, handleInputChange: chatHandleInputChange, handleSubmit: chatHandleSubmit } = useChat({
-  //   api: 'api/chat',
-  // });
-
-  // const { completion, input, handleInputChange, handleSubmit } = useCompletion();
   return (
     <section
       id="newsletter-section"
@@ -59,11 +46,6 @@ export function HeroSection(): JSX.Element {
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
             </span>
-
-            {/* Fast-Track Your Business Launch with{" "}
-            <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
-              Wedi
-            </span> */}
           </Balancer>
         </h1>
         </div>
@@ -121,47 +103,6 @@ export function HeroSection(): JSX.Element {
           >
             See on GitHub
           </Link>
-          </div>
-
-
-
-          {/* <>
-        {messages.map(message => (
-          <div key={message.id}>
-            {message.role === 'user' ? 'User: ' : 'AI: '}
-            {message.content}
-          </div>
-        ))}
-
-        <form onSubmit={handleSubmit}>
-          <input
-            name="prompt"
-            value={input}
-            onChange={handleInputChange}
-            id="input"
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </> */}
-
-
-      {/* <div>
-      {completion}
-      <form onSubmit={handleSubmit}>
-        <input value={input} onChange={handleInputChange} />
-      </form>
-    </div> */}
-
-
-          <div className="h-[40rem] flex flex-col justify-center  items-center px-4">
-            {/* <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
-              Ask Aceternity UI Anything
-            </h2> */}
-            {/* <PlaceholdersAndVanishInput
-              placeholders={placeholders}
-              onChange={handleInputChange}
-              onSubmit={handleSubmit}
-            /> */}
           </div>
         </div>
       </div>

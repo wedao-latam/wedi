@@ -88,7 +88,7 @@ export async function Header(): Promise<JSX.Element> {
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
                       <Link href="/dashboard/billing">
-                        <Icons.settings
+                        <Icons.creditCard
                           className="mr-2 size-4"
                           aria-hidden="true"
                         />

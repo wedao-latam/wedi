@@ -28,28 +28,20 @@ export const siteConfig = {
   keywords: ["SaaS", "Next.js", "Template"],
   navItems: [
     {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Features",
-      href: "/features",
-    },
-    {
-      title: "Pricing",
-      href: "/pricing",
-    },
-    {
-      title: "FAQ",
-      href: "/faq",
-    },
-    {
       title: "Docs",
       href: "/docs",
     },
     {
       title: "Blog",
       href: "/blog",
+    },
+    {
+      title: "FAQ",
+      href: "/faq",
+    },
+    {
+      title: "Pricing",
+      href: "/pricing",
     },
   ] satisfies NavItem[],
   navItemsMobile: [],
@@ -104,31 +96,6 @@ export const siteConfig = {
         },
       ],
     },
-    {
-      title: "Inspiration",
-      items: [
-        {
-          title: "Shadcn",
-          href: "https://ui.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Taxonomy",
-          href: "https://tx.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Skateshop",
-          href: "https://skateshop.sadmn.com/",
-          external: true,
-        },
-        {
-          title: "Acme Corp",
-          href: "https://acme-corp.jumr.dev/",
-          external: true,
-        },
-      ],
-    },
   ] satisfies NavItemFooter[],
 }
 
@@ -137,7 +104,7 @@ export const siteConfig = {
 // export const siteConfig: SiteConfig = {
 //   name: "Wedi",
 //   description:
-//     "Get your project off to an explosive start with Wedi! Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
+//     "Get your project off to an explosive start with Wedi Harness the power of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui and Stripe to build your next big thing.",
 //   url: site_url,
 //   ogImage: `${site_url}/og.jpg`,
 //   links: {

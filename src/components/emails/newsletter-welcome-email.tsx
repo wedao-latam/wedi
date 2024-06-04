@@ -15,7 +15,7 @@ import {
 import { env } from "@/env.mjs"
 
 export function NewsletterWelcomeEmail(): JSX.Element {
-  const previewText = "Hello and welcome to Wedi!"
+  const previewText = "Hello there! You're now on the Wedi waitlist!"
 
   return (
     <Html>
@@ -32,7 +32,7 @@ export function NewsletterWelcomeEmail(): JSX.Element {
               </Heading>
               <Hr className="my-4" />
               <Heading className="text-center text-3xl font-semibold text-zinc-800">
-                Welcome to Wedi!
+                Welcome to Wedi
               </Heading>
               <Text className="mb-0 mt-6 text-center text-base">
                 {`We're`} so glad {`you're`} here!

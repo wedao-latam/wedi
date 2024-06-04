@@ -39,7 +39,7 @@ export const {
 
       if (isLoggedIn) {
         if (isOnLoginPage || isOnSignupPage) {
-          return Response.redirect(new URL('/', nextUrl))
+          return Response.redirect(new URL('/dashboard', nextUrl))
         }
       }
 
