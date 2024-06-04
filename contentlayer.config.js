@@ -15,7 +15,6 @@ const computedFields = {
   readingTime: {
     type: "number",
     resolve: (doc) => {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       const content = String(doc.body.raw)
       const wordsPerMinute = 200
       const numberOfWords = content.split(/\s/g).length
@@ -26,16 +25,16 @@ const computedFields = {
 }
 
 
-// const defaultComputedFields = {
-//   slug: {
-//     type: "string",
-//     resolve: (doc) => `/${doc._raw.flattenedPath}`,
-//   },
-//   slugAsParams: {
-//     type: "string",
-//     resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
-//   },
-// };
+const defaultComputedFields = {
+  slug: {
+    type: "string",
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+  },
+};
 
 
 export const Doc = defineDocumentType(() => ({
