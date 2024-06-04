@@ -159,8 +159,7 @@ export function HeroSection(): JSX.Element {
 
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            Your shortcut to startup success. The ultimate, modern, open-source
-            Next.js template, with everything you need set up and ready to use.
+            See the developments of Wedi. Start your journey with us!
           </Balancer>
         </h3>
 

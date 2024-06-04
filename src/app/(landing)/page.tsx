@@ -1,13 +1,8 @@
 import { ContactSection } from "@/components/sections/contact-section"
-import { FAQSection } from "@/components/sections/faq-section"
 import { HeroSection } from "@/components/sections/hero-section"
 import { TechSection } from "@/components/sections/tech-section"
-import { TestimonialsSection } from "@/components/sections/testimonials-section"
 
-import BentoGrid from "@/components/sections/bentogrid"
-import InfoLanding from "@/components/sections/info-landing"
 import PreviewLanding from "@/components/sections/preview-landing"
-import { infos } from "@/config/landing"
 
 export default function LandingPage(): JSX.Element {
   return (
@@ -21,23 +16,23 @@ export default function LandingPage(): JSX.Element {
 
 
 
-      <InfoLanding data={infos[0]} reverse={true} />
+      {/* <InfoLanding data={infos[0]} reverse={true} /> */}
 
       {/* <Features /> */}
 
-      <BentoGrid />
+      {/* <BentoGrid /> */}
 
 
 
 
-      <FAQSection />
+      {/* <FAQSection /> */}
 
       {/* <BenefitsSection /> */}
 
       {/* <Testimonials /> */}
 
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       <ContactSection />
 

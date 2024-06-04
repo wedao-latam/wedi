@@ -14,7 +14,7 @@ export function ContactSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Let&apos;s{" "}
-              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-600 to-blue-800 bg-clip-text text-transparent">
                 Get in Touch
               </span>
             </Balancer>
