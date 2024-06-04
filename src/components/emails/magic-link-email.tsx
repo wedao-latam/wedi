@@ -56,7 +56,7 @@ export function MagicLinkEmail({
             </Section>
             <Section>
               <Text className="text-xs">
-                Hint: You can set a permanent password in Dashboard → Settings
+                @wedao-latam @broomva-tech 2024
               </Text>
             </Section>
           </Container>

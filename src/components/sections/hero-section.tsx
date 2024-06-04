@@ -21,24 +21,11 @@ export function HeroSection(): JSX.Element {
 
       <div className="container flex flex-col items-center gap-6 text-center">
 
-      {gitHubStars ? (
-          <Link
-            href={siteConfig.links.github}
-            target="_blank"
-            rel="noreferrer"
-            className="z-10"
-          >
-            <Badge
-              variant="outline"
-              aria-hidden="true"
-              className="rounded-md px-3.5 py-0.5 text-sm transition-all duration-1000 ease-out hover:opacity-80 md:text-base md:hover:-translate-y-2"
-            >
-              <Icons.gitHub className="mr-2 size-3.5" aria-hidden="true" />
-              {gitHubStars} Stars on GitHub
-            </Badge>
-            <span className="sr-only">GitHub</span>
-          </Link>
-        ) : null}
+      <div className="flex flex-row border-border text-muted-foreground text-sm border-2 rounded-full p-2">
+					🚀 We're launching a new payments plaform! Join us!
+				</div>
+
+      
         
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
@@ -105,6 +92,25 @@ export function HeroSection(): JSX.Element {
           </Link>
           </div>
         </div>
+
+        {gitHubStars ? (
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noreferrer"
+            className="z-10"
+          >
+            <Badge
+              variant="outline"
+              aria-hidden="true"
+              className="rounded-md px-3.5 py-0.5 text-sm transition-all duration-1000 ease-out hover:opacity-80 md:text-base md:hover:-translate-y-2"
+            >
+              <Icons.gitHub className="mr-2 size-3.5" aria-hidden="true" />
+              {gitHubStars} Stars on GitHub
+            </Badge>
+            <span className="sr-only">GitHub</span>
+          </Link>
+        ) : null}
       </div>
     </section>
   )
