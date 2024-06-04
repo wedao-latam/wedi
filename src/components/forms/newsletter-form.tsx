@@ -1,75 +1,113 @@
-"use client";
+"use client"
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
+import { subscribeToNewsletter } from "@/actions/newsletter"
+import { zodResolver } from "@hookform/resolvers/zod"
+import * as React from "react"
+import { useForm } from "react-hook-form"
 
-import { Button } from "@/components/ui/button";
 import {
-    Form,
-    FormControl,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { toast } from "@/components/ui/use-toast";
+  newsletterSignUpSchema,
+  type NewsletterSignUpFormInput,
+} from "@/validations/newsletter"
 
-const FormSchema = z.object({
-  email: z.string().email({
-    message: "Enter a valid email.",
-  }),
-});
+import { useToast } from "@/hooks/use-toast"
 
-export function NewsletterForm() {
-  const form = useForm<z.infer<typeof FormSchema>>({
-    resolver: zodResolver(FormSchema),
+import { Icons } from "@/components/icons"
+import { Button } from "@/components/ui/button"
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+
+export function NewsletterForm(): JSX.Element {
+  const { toast } = useToast()
+  const [isPending, startTransition] = React.useTransition()
+
+  const form = useForm<NewsletterSignUpFormInput>({
+    resolver: zodResolver(newsletterSignUpSchema),
     defaultValues: {
       email: "",
     },
-  });
+  })
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    form.reset();
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
+  function onSubmit(formData: NewsletterSignUpFormInput): void {
+    startTransition(async () => {
+      try {
+        const message = await subscribeToNewsletter({ email: formData.email })
+
+        switch (message) {
+          case "exists":
+            toast({
+              title: "You are subscribed already",
+              variant: "destructive",
+            })
+            form.reset()
+            break
+          case "success":
+            toast({
+              title: "Thank you!",
+              description: "You have successfully subscribed to our Waitlist",
+            })
+            form.reset()
+            break
+          default:
+            toast({
+              title: "Something went wrong",
+              description: "Please try again",
+              variant: "destructive",
+            })
+        }
+      } catch (error) {
+        toast({
+          title: "Something went wrong",
+          description: "Please try again",
+          variant: "destructive",
+        })
+      }
+    })
   }
-
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full space-y-2 sm:max-w-sm"
+        className="flex h-10 w-full  items-center justify-center md:h-12"
+        onSubmit={(...args) => void form.handleSubmit(onSubmit)(...args)}
       >
         <FormField
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
-              <FormLabel>Subscribe to our Waitlist</FormLabel>
-              <FormControl>
+            <FormItem className="relative h-10 w-full space-y-0 md:h-12">
+              <FormLabel className="sr-only">Email</FormLabel>
+              <FormControl className="rounded-r-none">
                 <Input
                   type="email"
-                  className="rounded-full px-4"
-                  placeholder="janedoe@example.com"
+                  placeholder="tucorreo@gmail.com"
+                  className="h-10 placeholder:text-xs md:h-12 md:placeholder:text-sm"
                   {...field}
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="pt-2 sm:text-sm" />
             </FormItem>
           )}
         />
-        <Button type="submit" size="sm" className="px-4">
-          Subscribe
+
+        <Button
+          className="size-10 rounded-l-none md:size-12"
+          disabled={isPending}
+        >
+          {isPending ? (
+            <Icons.spinner className="size-4 animate-spin" aria-hidden="true" />
+          ) : (
+            <Icons.paperPlane className="size-4" aria-hidden="true" />
+          )}
+          <span className="sr-only">Join newsletter</span>
         </Button>
       </form>
     </Form>
-  );
+  )
 }

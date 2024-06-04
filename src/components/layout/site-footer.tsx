@@ -1,11 +1,13 @@
-import * as React from "react";
 import Link from "next/link";
+import * as React from "react";
 
+// import { ModeToggle } from "@/components/layout/mode-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { footerLinks, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/layout/mode-toggle";
-
+import Balancer from "react-wrap-balancer";
 import { NewsletterForm } from "../forms/newsletter-form";
+// import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form"
 import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
@@ -31,10 +33,27 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </ul>
           </div>
         ))}
+
+        
         <div className="flex flex-col  items-end md:col-span-2">
+        <p className="text-sm font-medium leading-5 tracking-wide lg:text-base 2xl:text-lg">
+            <Balancer>
+              Join our waitlist to get informed about the latest updates and news on our platform.
+            </Balancer>
+          </p>
           <NewsletterForm />
         </div>
-      </div>
+
+        {/* <div className="hidden flex-col gap-4 sm:flex sm:w-1/3 xl:pl-24">
+          <p className="text-sm font-medium leading-5 tracking-wide lg:text-base 2xl:text-lg">
+            <Balancer>
+              Join our waitlist to get informed about the latest updates and news on our platform.
+            </Balancer>
+          </p>
+
+          <NewsletterSignUpForm />
+        </div>*/}
+      </div> 
 
       <div className="border-t py-4">
         <div className="container flex max-w-6xl items-center justify-between">
@@ -42,32 +61,44 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             Copyright &copy; 2024. All rights reserved.
           </span> */}
           <p className="text-left text-sm text-muted-foreground">
-            Built by{" "}
+            Built in public by{" "}
             <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
+              href="https://hi.broomva.tech"
+              target="https://github.com/broomva"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              mickasmt
+              broomva. 
             </Link>
-            . Hosted on{" "}
+            {" "} A {" "}
             <Link
-              href="https://vercel.com"
+              href="https://wedaolatam.com"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Vercel
+              WeDAO Latam 
             </Link>
-            . Illustrations by{" "}
+
+            {" "} Fintech Cell, 2024. All rights reserved. 
+            
+            Made with love in 🇨🇴   {" "}
             <Link
-              href="https://popsy.co"
+              href="https://twitter.com/wedao-latam"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Popsy
+              @wedao-latam
+            </Link>
+            {" "}
+            <Link
+              href="https://twitter.com/broomva-tech"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              @broomva-tech
             </Link>
           </p>
 
@@ -80,7 +111,8 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             >
               <Icons.gitHub className="size-5" />
             </Link>
-            <ModeToggle />
+            {/* <ModeToggle /> */}
+            <ThemeToggle />
           </div>
         </div>
       </div>

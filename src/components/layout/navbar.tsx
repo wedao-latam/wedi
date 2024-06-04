@@ -1,5 +1,4 @@
 "use client";
-
 import { type MainNavItem } from "@/types";
 import { useSession } from "next-auth/react";
 import Link from "next/link";

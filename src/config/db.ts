@@ -3,11 +3,10 @@ import { PrismaNeon } from "@prisma/adapter-neon"
 import { PrismaClient } from "@prisma/client"
 import ws from "ws"
 
-import { env } from "@/env.mjs"
 
 neonConfig.webSocketConstructor = ws as unknown as typeof WebSocket
 
-const connectionString = env.DATABASE_URL
+const connectionString = process.env.DATABASE_URL
 
 const pool = new Pool({ connectionString })
 const adapter = new PrismaNeon(pool)
@@ -24,4 +23,4 @@ const globalForPrisma = globalThis as unknown as {
 
 export const prisma = globalForPrisma.prisma ?? prismaClientSingleton()
 
-if (env.NODE_ENV !== "production") globalForPrisma.prisma = prisma
+if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma

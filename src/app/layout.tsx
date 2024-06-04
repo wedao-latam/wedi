@@ -13,6 +13,7 @@ import { cn } from "@/lib/utils"
 import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider"
 import { ThemeProvider } from "@/providers/theme-provider"
 
+import { SiteFooter } from "@/components/layout/site-footer"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { Toaster } from "@/components/ui/toaster"
 
@@ -96,6 +97,8 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
             <TailwindIndicator />
           </ThemeProvider>
         </SmoothScrollProvider>
+
+        <SiteFooter className="border-t" />
       </body>
     </html>
   )
