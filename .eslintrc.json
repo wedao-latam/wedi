@@ -57,11 +57,5 @@
       "config": "./tailwind.config.ts",
       "classRegex": "^(class(Name)?|tw)$"
     }
-  },
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "parser": "@typescript-eslint/parser"
-    }
-  ]
+  }
 }
