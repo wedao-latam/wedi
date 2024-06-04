@@ -1,5 +1,8 @@
 
 "use client";
+
+
+import { useCompletion } from 'ai/react';
  
 import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
 
@@ -11,16 +14,17 @@ import { cn, getGitHubStars } from "@/lib/utils";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
-<<<<<<< HEAD
 import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form";
-=======
-import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
->>>>>>> parent of 596e40c (fix: updated names)
+
 
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
+
+  // const { messages, input: chatInput, handleInputChange: chatHandleInputChange, handleSubmit: chatHandleSubmit } = useChat({
+  //   api: 'api/chat',
+  // });
+
+  const { completion, input, handleInputChange, handleSubmit } = useCompletion();
 
   const placeholders = [
     "What's the first rule of Fight Club?",
@@ -35,6 +39,7 @@ export function HeroSection(): JSX.Element {
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Create arcan session and open the vercel ai chat modal
     console.log("submitted");
   };
   return (
@@ -67,16 +72,15 @@ export function HeroSection(): JSX.Element {
         
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
-<<<<<<< HEAD
             Buy USDC and Spend like local with{" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
-=======
-            Fast-Track Your Business Launch with{" "}
+            </span>
+
+            {/* Fast-Track Your Business Launch with{" "}
             <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
               SaaSy Land
->>>>>>> parent of 596e40c (fix: updated names)
-            </span>
+            </span> */}
           </Balancer>
         </h1>
         </div>
@@ -137,14 +141,43 @@ export function HeroSection(): JSX.Element {
           </div>
 
 
+
+          {/* <>
+        {messages.map(message => (
+          <div key={message.id}>
+            {message.role === 'user' ? 'User: ' : 'AI: '}
+            {message.content}
+          </div>
+        ))}
+
+        <form onSubmit={handleSubmit}>
+          <input
+            name="prompt"
+            value={input}
+            onChange={handleInputChange}
+            id="input"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </> */}
+
+
+      {/* <div>
+      {completion}
+      <form onSubmit={handleSubmit}>
+        <input value={input} onChange={handleInputChange} />
+      </form>
+    </div> */}
+
+
           <div className="h-[40rem] flex flex-col justify-center  items-center px-4">
-            <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
+            {/* <h2 className="mb-10 sm:mb-20 text-xl text-center sm:text-5xl dark:text-white text-black">
               Ask Aceternity UI Anything
-            </h2>
+            </h2> */}
             <PlaceholdersAndVanishInput
               placeholders={placeholders}
-              onChange={handleChange}
-              onSubmit={onSubmit}
+              onChange={handleInputChange}
+              onSubmit={handleSubmit}
             />
           </div>
         </div>
