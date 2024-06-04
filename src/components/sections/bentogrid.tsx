@@ -1,3 +1,4 @@
+import { Icons } from "@/components/icons";
 import Image from "next/image";
 
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
@@ -23,11 +24,11 @@ export default function BentoGrid() {
                   />
                 </svg>
                 <span className="text-gradient_indigo-purple mx-auto block w-fit font-heading text-5xl">
-                  100%
+                AI Agent
                 </span>
               </div>
               <h2 className="mt-6 text-center font-heading text-3xl md:text-4xl lg:text-[40px]">
-                Autonomous. AI Agent Backed
+                Autonomous Backed Fund
               </h2>
             </div>
           </div>
@@ -93,6 +94,7 @@ export default function BentoGrid() {
                   Secure by default
                 </h2>
                 <p className="text-muted-foreground">
+                  Stripe | MoonPay | Circle Integration {' '}
                   SEC & GDPR Compliant
                 </p>
               </div>
@@ -103,7 +105,8 @@ export default function BentoGrid() {
           <div className="relative col-span-full overflow-hidden rounded-2xl border bg-background p-8 sm:col-span-3 lg:col-span-2">
             <div>
               <div>
-                <svg
+                <Icons.confetti className="h-32 w-full" />
+                {/* <svg
                   className="h-32 w-full"
                   viewBox="0 0 386 123"
                   fill="none"
@@ -182,7 +185,7 @@ export default function BentoGrid() {
                       />
                     </clipPath>
                   </defs>
-                </svg>
+                </svg> */}
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">

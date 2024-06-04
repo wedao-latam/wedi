@@ -7,9 +7,9 @@ import { signIn } from "@/auth"
 import bcryptjs from "bcryptjs"
 import { AuthError } from "next-auth"
 
-import { env } from "@/env.mjs"
 import { prisma } from "@/config/db"
 import { resend } from "@/config/email"
+import { env } from "@/env.mjs"
 import {
   linkOAuthAccountSchema,
   passwordResetSchema,

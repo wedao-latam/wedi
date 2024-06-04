@@ -36,7 +36,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
 
         
         <div className="flex flex-col  items-end md:col-span-2">
-        <p className="text-sm font-medium leading-5 tracking-wide lg:text-base 2xl:text-lg">
+        <p className="text-sm font-medium tracking-wide lg:text-base 2xl:text-lg">
             <Balancer>
               Join our waitlist to get informed about the latest updates and news on our platform.
             </Balancer>

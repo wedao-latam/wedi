@@ -47,7 +47,7 @@ export function Footer(): JSX.Element {
         </div>
 
         <div className="hidden flex-col gap-4 sm:flex sm:w-1/3 xl:pl-24">
-          <p className="text-sm font-medium leading-5 tracking-wide lg:text-base 2xl:text-lg">
+          <p className="text-sm font-medium tracking-wide lg:text-base 2xl:text-lg">
             <Balancer>
               Join our waitlist to get informed about the latest updates and news on our platform.
             </Balancer>
