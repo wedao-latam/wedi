@@ -41,7 +41,7 @@ export function HeroSection(): JSX.Element {
 
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
-            Save and Pay with USDC Spend like local with{" "}
+            Save and Pay in USDC Spend like local with{" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
             </span>
