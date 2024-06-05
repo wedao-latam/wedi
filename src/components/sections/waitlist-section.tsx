@@ -3,10 +3,10 @@ import Balancer from "react-wrap-balancer";
 
 export default function WaitlistSection() {
     return (
-        <section id="waitlist-section" aria-label="waitlist section" className="w-full py-20">
-            <div className="container flex flex-col items-center justify-center gap-10 w-full">
-                <div className="flex flex-col items-center gap-4 text-center">
-                    <h2 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl animate-fade-in">
+        <section id="waitlist-section" aria-label="waitlist section" className="w-full py-12">
+            <div className="container flex flex-col items-center justify-center gap-6">
+                <div className="flex flex-col items-center gap-2 text-center">
+                    <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in">
                         <Balancer>
                             Join{" "}
                             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text text-transparent">
