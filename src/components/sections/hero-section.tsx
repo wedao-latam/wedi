@@ -97,7 +97,14 @@ export function HeroSection(): JSX.Element {
 
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            Watch the developments of Wedi {" "}
+            Watch the developments of Wedi on {" "}
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-foreground underline-offset-4 transition-all hover:underline"
+            > X </Link>
+            {" "} and {" "}
             <Link
               href={siteConfig.links.github}
               target="_blank"
@@ -105,14 +112,9 @@ export function HeroSection(): JSX.Element {
               className="font-semibold text-foreground underline-offset-4 transition-all hover:underline"
             >
               Github
-            </Link>{" "} and {" "}
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-              className="font-semibold text-foreground underline-offset-4 transition-all hover:underline"
-            > X. </Link>
+            </Link>
           </Balancer>
+            {" "}!  🐓  🚀  ☄️
         </h3>
 
         <div className="z-10 flex animate-fade-up flex-col justify-center gap-4 sm:flex-row">

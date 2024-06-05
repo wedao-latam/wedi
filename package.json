@@ -80,6 +80,7 @@
     "@react-email/button": "0.0.14",
     "@react-email/components": "^0.0.17",
     "@react-email/html": "0.0.7",
+    "@sentry/nextjs": "^8",
     "@studio-freight/react-lenis": "^0.0.47",
     "@svgr/webpack": "^8.1.0",
     "@t3-oss/env-nextjs": "^0.7.1",

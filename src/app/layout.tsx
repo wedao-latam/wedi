@@ -81,7 +81,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
     <html lang="en" className="overflow-x-hidden overflow-y-scroll">
       <body
         className={cn(
-          "w-full bg-background bg-gradient-to-l from-background to-blue-800/30 font-sans antialiased",
+          "w-full bg-background bg-gradient-to-l from-background to-blue-400/25 font-sans antialiased",
           fontInter.variable,
           fontUrbanist.variable,
           fontHeading.variable

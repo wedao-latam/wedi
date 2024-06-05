@@ -33,6 +33,9 @@ export async function Header(): Promise<JSX.Element> {
   return (
     <header className="sticky top-0 z-40 flex h-20 w-full bg-transparent">
       <div className="container flex items-center justify-between p-4">
+        
+        <Navigation navItems={siteConfig.navItems} />
+
         <Link
           href="/"
           className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
@@ -41,7 +44,8 @@ export async function Header(): Promise<JSX.Element> {
 
           <span className="hidden md:flex">{siteConfig.name}</span>
         </Link>
-        <Navigation navItems={siteConfig.navItems} />
+
+
         <div className="flex items-center justify-center">
           <ThemeToggle />
           <NavigationMobile navItems={siteConfig.navItems} />
