@@ -23,6 +23,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+import Image from "next/image"
+
 
 
 export async function Header(): Promise<JSX.Element> {
@@ -35,7 +37,8 @@ export async function Header(): Promise<JSX.Element> {
           href="/"
           className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
         >
-          <Icons.billing className="size-6 md:hidden lg:flex" />
+          <Image src="/logo.png" alt="logo" width={40} height={40} />
+
           <span className="hidden md:flex">{siteConfig.name}</span>
         </Link>
         <Navigation navItems={siteConfig.navItems} />
@@ -117,7 +120,7 @@ export async function Header(): Promise<JSX.Element> {
             ) : (
               <Link
                 aria-label="Get started"
-                href="/signup"
+                href="/waitlist"
                 className={cn(buttonVariants({ size: "sm" }), "ml-2")}
               >
                 Get Started

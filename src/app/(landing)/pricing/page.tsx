@@ -1,5 +1,6 @@
-import { PricingCards } from "@/components/pricing-cards";
+// import { PricingCards } from "@/components/pricing-cards";
 import { PricingFaq } from "@/components/pricing-faq";
+import PricingSection from "@/components/sections/pricing-section";
 import { getCurrentUser } from "@/lib/session";
 import { getUserSubscriptionPlan } from "@/lib/subscription";
 import { constructMetadata } from "@/lib/utils";
@@ -19,7 +20,8 @@ export default async function PricingPage() {
 
   return (
     <div className="flex w-full flex-col gap-16 py-8 md:py-8">
-      <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} />
+      {/* <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} /> */}
+      <PricingSection userId={user?.id} subscriptionPlan={subscriptionPlan}/>
       <hr className="container" />
       <PricingFaq />
     </div>

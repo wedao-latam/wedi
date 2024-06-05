@@ -27,14 +27,14 @@ export const siteConfig = {
   hostingRegion: "fra1",
   keywords: ["SaaS", "Next.js", "Template"],
   navItems: [
-    {
-      title: "Docs",
-      href: "/docs",
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
+    // {
+    //   title: "Docs",
+    //   href: "/docs",
+    // },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    // },
     {
       title: "FAQ",
       href: "/faq",
@@ -49,6 +49,11 @@ export const siteConfig = {
     {
       title: "Company",
       items: [
+        {
+          title: "Dashboard",
+          href: "/dahboard",
+          external: false,
+        },
         {
           title: "About",
           href: "/about",
