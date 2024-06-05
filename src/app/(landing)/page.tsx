@@ -1,13 +1,11 @@
 
 
-import { ContactSection } from "@/components/sections/contact-section";
+// import { ContactSection } from "@/components/sections/contact-section";
 import { HeroSection } from "@/components/sections/hero-section";
 // import { InfoLanding } from "@/components/sections/info-landing";
 import BentoGrid from "@/components/sections/bentogrid";
 
 import PreviewLanding from "@/components/sections/preview-landing";
-
-
 
 
 
@@ -17,12 +15,7 @@ export default function LandingPage(): JSX.Element {
     <div className="grid w-full grid-cols-1 items-center justify-center gap-16s md:gap-16">
       <HeroSection />
 
-
-            
-
       {/* <TechSection /> */}
-
-
 
       {/* <InfoLanding data={infos[0]} reverse={true} /> */}
 
@@ -30,32 +23,17 @@ export default function LandingPage(): JSX.Element {
 
       <BentoGrid />
 
-      
-
-     
-
-
-
-
       {/* <FAQSection /> */}
 
       {/* <BenefitsSection /> */}
 
       {/* <Testimonials /> */}
 
-
       {/* <TestimonialsSection /> */}
 
-      <ContactSection />
-
+      {/* <ContactSection />  Replace with Arcan AI agent embedeed using chainlit + langserve*/}
 
       <PreviewLanding />
-
-
-
-
-
-
 
     </div>
   )
