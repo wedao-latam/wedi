@@ -28,7 +28,7 @@ export function HeroSection(): JSX.Element {
     <section
       id="newsletter-section"
       aria-label="newsletter section"
-      className="w-full bg-background py-16"
+      className="w-full  py-16"
     >
 
       <div className="container flex flex-col items-center gap-6 text-center">

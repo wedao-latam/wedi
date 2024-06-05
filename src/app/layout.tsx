@@ -74,11 +74,12 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
+  // const { theme } = useTheme();
   return (
     <html lang="en" className="overflow-x-hidden overflow-y-scroll">
       <body
         className={cn(
-          "w-full bg-background bg-gradient-to-r from-background to-blue-800 font-sans antialiased",
+          "w-full bg-background bg-gradient-to-l from-background to-blue-800/30 font-sans antialiased",
           fontInter.variable,
           fontUrbanist.variable,
           fontHeading.variable
