@@ -1923,9 +1923,9 @@
     yargs "^17.7.2"
 
 "@hookform/resolvers@^3.3.4":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-3.4.2.tgz#b69525248c2a9a1b2546411251ea25029915841a"
-  integrity sha512-1m9uAVIO8wVf7VCDAGsuGA0t6Z3m6jVGAN50HkV9vYLl0yixKK/Z1lr01vaRvYCkIKGoy1noVRxMzQYb4y/j1Q==
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-3.5.0.tgz#649ddf4fb10bb5a52ef4b6e5a157da1f1bad7b9e"
+  integrity sha512-bgL8iT0/F+2Q7wB7vYSFu3H1c70C3yI2f9evVw0Td3yf6Fa9eBp6nw5L8mzVJV01EGN1Ky+FhlzGSIoZBOeHDA==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
@@ -2157,9 +2157,9 @@
   integrity sha512-g//kkF4kOwUjemValCtOc/xiYzmwMRmWq3Bn+YnzOzuZLHq2PpMOxxIayN3cKbo7Ko2Np65t6D9H81IvXbXhqg==
 
 "@langchain/core@>0.1.0  <0.3.0", "@langchain/core@>=0.2.5 <0.3.0", "@langchain/core@~0.2.0":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.2.5.tgz#4983469d04615f7f66ae573319939ed7301f6889"
-  integrity sha512-tMaKRFVewFn8crQwlbXGjT7hlMdX1yXHap1ebBx7Bb2C3C9AeZ+sXbX11m27yamypNlVVegwUcisw3YCaDkZJA==
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@langchain/core/-/core-0.2.6.tgz#7b57ff88d4b5ae75bafbe689cd8878e9fbad7de6"
+  integrity sha512-YB9F0vdi/PcgBLSKtDwQ3gV6w4xVfk4ph0U43Okz2dAapKfBkVVB0rzr/afYUt/WHs864MuaO8uLN64egSDtIA==
   dependencies:
     ansi-styles "^5.0.0"
     camelcase "6"
@@ -7806,9 +7806,9 @@ jackspeak@^2.0.3, jackspeak@^2.3.5:
     "@pkgjs/parseargs" "^0.11.0"
 
 jackspeak@^3.1.2:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-3.2.5.tgz#70f337b27fa555c2cc85fe24bf4dd6ed4e17907c"
-  integrity sha512-a1hopwtr4NawFIrSmFgufzrN1Qy2BAfMJ0yScJBs/olJhTcctCy3YIDx4hTY2DOTJD1pUMTly80kmlYZxjZr5w==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-3.3.0.tgz#65dc7cd87522494fcb2648ec6ca684170e9e1727"
+  integrity sha512-glPiBfKguqA7v8JsXO3iLjJWZ9FV1vNpoI0I9hI9Mnk5yetO9uPLSpiCEmiVijAssv2f54HpvtzvAHfhPieiDQ==
   dependencies:
     "@isaacs/cliui" "^8.0.2"
   optionalDependencies:
@@ -7824,9 +7824,9 @@ jest-worker@^27.4.5:
     supports-color "^8.0.0"
 
 jiti@^1.19.1, jiti@^1.21.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.0.tgz#7c97f8fe045724e136a397f7340475244156105d"
-  integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
+  version "1.21.1"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.1.tgz#84639a2debaececa42fcb2a313b5b80716c894ab"
+  integrity sha512-KMXpzEJMsOFyRj6ZpDTnnlJrdr9umUY+eut5vlRvjVixohitnRFIRTFw9MEu9zPlBxTHZo6xD5ftKYiQZuJYQw==
 
 jose@^5.1.3:
   version "5.4.0"
