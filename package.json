@@ -33,7 +33,8 @@
     "prettier:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
     "lint": "contentlayer build && next lint",
-    "lint:fix": "contentlayer build && next lint --fix"
+    "lint:fix": "contentlayer build && next lint --fix",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@ai-sdk/openai": "^0.0.18",
@@ -48,6 +49,9 @@
     "@next/bundle-analyzer": "^14.2.3",
     "@prisma/adapter-neon": "^5.13.0",
     "@prisma/client": "^5.13.0",
+    "@prismicio/client": "^7.5.0",
+    "@prismicio/next": "^1.6.0",
+    "@prismicio/react": "^2.8.0",
     "@radix-ui/react-accessible-icon": "^1.0.3",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
