@@ -1,5 +1,5 @@
-import { Icons } from "@/components/icons";
-import { Badge } from "@/components/ui/badge";
+// import { Icons } from "@/components/icons";
+// import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { cn, getGitHubStars } from "@/lib/utils";
@@ -105,7 +105,7 @@ export function HeroSection(): JSX.Element {
           </div>
         </div>
 
-        {gitHubStars ? (
+        {/* {gitHubStars ? (
           <Link
             href={siteConfig.links.github}
             target="_blank"
@@ -122,7 +122,7 @@ export function HeroSection(): JSX.Element {
             </Badge>
             <span className="sr-only">GitHub</span>
           </Link>
-        ) : null}
+        ) : null} */}
       </div>
     </section>
   )
