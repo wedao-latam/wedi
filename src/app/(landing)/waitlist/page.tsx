@@ -7,9 +7,9 @@ export default function Waitlist(): JSX.Element {
       <header className="flex flex-col items-center justify-center gap-2 mb-2">
         <div className="flex items-center gap-4">
           <h1 className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight sm:text-7xl md:text-8xl lg:text-9xl flex items-center">
-            <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
+            {/* <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi
-            </span>
+            </span> */}
             <Image src="/logo.png" alt="Wedi Logo" width={50} height={50} className="py-10"/>
           </h1>
         </div>
