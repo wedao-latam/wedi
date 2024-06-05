@@ -92,7 +92,7 @@ export function HeroSection(): JSX.Element {
               "transition-all duration-1000 ease-out md:hover:-translate-y-2"
             )}
           >
-            Join the Revolution!
+            Join the closed beta waitlist
           </Link>
 
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">

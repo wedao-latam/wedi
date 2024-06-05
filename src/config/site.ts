@@ -8,11 +8,11 @@ const site_url = env.NEXT_PUBLIC_APP_URL;
 const links = {
   github:
     "https://github.com/wedao-latam/wedi",
-  twitter: "https://twitter.com/wedao-latam",
-  linkedin: "https://www.linkedin.com/in/wedao-latam",
+  twitter: "https://twitter.com/broomva-tech",
+  linkedin: "https://www.linkedin.com/in/broomva-tech",
   discord: "",
   authorsWebsite: "https://wedao-latam.com",
-  authorsGitHub: "https://github.com/wedao-latam",
+  authorsGitHub: "https://github.com/broomva",
   openGraphImage: "https://wedaolatam.com/images/opengraph-image.png",
 }
 
@@ -39,10 +39,10 @@ export const siteConfig = {
       title: "FAQ",
       href: "/faq",
     },
-    {
-      title: "Pricing",
-      href: "/pricing",
-    },
+    // {
+    //   title: "Pricing",
+    //   href: "/pricing",
+    // },
   ] satisfies NavItem[],
   navItemsMobile: [],
   navItemsFooter: [
@@ -107,6 +107,31 @@ export const siteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
+    title: "Support",
+    items: [
+      {
+        title: "Docs",
+        href: "/docs",
+        external: false,
+      },
+      {
+        title: "FAQ",
+        href: "/faq",
+        external: false,
+      },
+      {
+        title: "Blog",
+        href: "/blog",
+        external: false,
+      },
+      {
+        title: "Contact",
+        href: "/contact",
+        external: false,
+      },
+    ],
+  },
+  {
     title: "Company",
     items: [
       { title: "About", href: "#" },
@@ -124,13 +149,13 @@ export const footerLinks: SidebarNavItem[] = [
       { title: "Changelog", href: "#" },
     ],
   },
-  {
-    title: "Docs",
-    items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
-    ],
-  },
+  // {
+  //   title: "Docs",
+  //   items: [
+  //     { title: "Introduction", href: "#" },
+  //     { title: "Installation", href: "#" },
+  //     { title: "Components", href: "#" },
+  //     { title: "Code Blocks", href: "#" },
+  //   ],
+  // },
 ];

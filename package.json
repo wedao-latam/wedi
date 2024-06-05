@@ -17,7 +17,6 @@
   },
   "type": "module",
   "scripts": {
-    "install": "next install",
     "dev": "contentlayer build && next dev --experimental-https",
     "build": "contentlayer build && next build",
     "start": "contentlayer build && next start",

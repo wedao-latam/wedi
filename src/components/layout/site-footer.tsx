@@ -84,7 +84,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             
             Made with love in 🇨🇴   {" "}
             <Link
-              href="https://twitter.com/wedao-latam"
+              href="https://twitter.com/broomva-tech"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
