@@ -1,3 +1,5 @@
+"use client"
+
 import { linkOAuthAccount } from "@/actions/auth"
 import { getUserById } from "@/actions/user"
 import { prisma } from "@/config/db"
