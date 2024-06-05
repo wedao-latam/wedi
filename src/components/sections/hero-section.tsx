@@ -6,6 +6,8 @@ import { cn, getGitHubStars } from "@/lib/utils";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
+import { FlipWords } from "../ui/flip-words";
+
 import WaitlistSection from "@/components/sections/waitlist-section";
 
 // import { NewsletterSignUpForm } from "@/components/forms/newsletter-signup-form";
@@ -23,8 +25,12 @@ import WaitlistSection from "@/components/sections/waitlist-section";
 
 
 
+
+
 export function HeroSection(): JSX.Element {
   const gitHubStars = getGitHubStars()
+
+  const words = ["USDC", "EURC", "ETH", "COPW", "BTC"];
 
   return (
     <section
@@ -35,7 +41,7 @@ export function HeroSection(): JSX.Element {
 
       <div className="container flex flex-col items-center gap-4 text-center">
 
-      <div className="flex flex-row border-border text-muted-foreground text-sm border-2 rounded-full p-3 bg-gradient-to-r from-background to-blue-400/40">
+      <div className="flex flex-row border-border text-muted-foreground text-sm border-2 rounded-full p-3 bg-blue-300/40">
 					🚀 We're launching a new payments plaform! Join us!
 				</div>
 
@@ -43,7 +49,10 @@ export function HeroSection(): JSX.Element {
 
       <h1 className="animate-fade-up font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <Balancer>
-            Save and Pay in Digital Dollars Spend local like a{" "}
+          Save and Pay in {" "}
+            <FlipWords words={words} /> 
+            <br />
+            Spend local like a {" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi 🔥
             </span>
