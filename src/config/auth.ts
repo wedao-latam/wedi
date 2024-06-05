@@ -6,9 +6,9 @@ import GitHubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import ResendProvider from "next-auth/providers/resend"
 
-import { env } from "@/env.mjs"
 import { resend } from "@/config/email"
 import { siteConfig } from "@/config/site"
+import { env } from "@/env.mjs"
 import { signInWithPasswordSchema } from "@/validations/auth"
 
 import { MagicLinkEmail } from "@/components/emails/magic-link-email"

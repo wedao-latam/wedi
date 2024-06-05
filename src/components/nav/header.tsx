@@ -1,6 +1,9 @@
+"use client"
+
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
+
 
 import auth from "@/lib/auth"
 import { cn } from "@/lib/utils"
