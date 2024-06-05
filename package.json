@@ -81,6 +81,8 @@
     "@react-email/components": "^0.0.17",
     "@react-email/html": "0.0.7",
     "@sentry/nextjs": "^8",
+    "@sentry/wizard": "^3.23.0",
+    "@slicemachine/init": "^2.9.19",
     "@studio-freight/react-lenis": "^0.0.47",
     "@svgr/webpack": "^8.1.0",
     "@t3-oss/env-nextjs": "^0.7.1",
@@ -173,7 +175,10 @@
     "zod": "^3.23.8",
     "zustand": "^4.5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.41",
+    "slice-machine-ui": "^2.2.0"
+  },
   "engine": {
     "node": ">=20.10.0"
   }
