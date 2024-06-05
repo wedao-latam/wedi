@@ -76,6 +76,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
   // const { theme } = useTheme();
   return (
+    
     <html lang="en" className="overflow-x-hidden overflow-y-scroll">
       <body
         className={cn(
@@ -85,6 +86,16 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
           fontHeading.variable
         )}
       >
+        <head>
+          {(process.env.NODE_ENV === "development" || process.env.VERCEL_ENV === "preview") && (
+            // eslint-disable-next-line @next/next/no-sync-scripts
+            <script
+              data-project-id="zZhwSnspIWk5if4FE4UC17xhixUKSuo7LM8Nf0AF"
+              data-is-production-environment="false"
+              src="https://snippet.meticulous.ai/v1/meticulous.js"
+            />
+          )}
+        </head>
         <SmoothScrollProvider>
           <ThemeProvider
             attribute="class"

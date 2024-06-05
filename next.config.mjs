@@ -15,12 +15,12 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  webpack: (config) => {
-    config.ignoreWarnings = [
-      /critical dependency:/,
-    ];
-    return config;
-  },
+  // webpack: (config) => {
+  //   config.ignoreWarnings = [
+  //     /critical dependency:/,
+  //   ];
+  //   return config;
+  // },
   images: {
     remotePatterns: [
       {

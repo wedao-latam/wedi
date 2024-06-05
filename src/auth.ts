@@ -1,5 +1,3 @@
-"use client"
-
 import { linkOAuthAccount } from "@/actions/auth"
 import { getUserById } from "@/actions/user"
 import { prisma } from "@/config/db"
@@ -82,7 +80,6 @@ export const {
       token.picture = dbUser.image;
 
       return token;
-      return token
     },
 
     async signIn({ user, account }) {
