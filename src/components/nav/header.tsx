@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
@@ -8,23 +6,24 @@ import { siteConfig } from "@/config/site"
 import auth from "@/lib/auth"
 import { cn } from "@/lib/utils"
 
-// import { SignOutButton } from "@/components/auth/signout-button"
+import { SignOutButton } from "@/components/auth/signout-button"
 import { Icons } from "@/components/icons"
 import { Navigation } from "@/components/nav/navigation"
 import { NavigationMobile } from "@/components/nav/navigation-mobile"
 import { ThemeToggle } from "@/components/theme-toggle"
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { buttonVariants } from "@/components/ui/button"
 import {
   DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-// DropdownMenuContent,
-  // DropdownMenuGroup,
-  // DropdownMenuItem,
-  // DropdownMenuLabel,
-  // DropdownMenuSeparator,
-  // DropdownMenuTrigger,
+
 
 export async function Header(): Promise<JSX.Element> {
   const session = await auth()
@@ -47,7 +46,7 @@ export async function Header(): Promise<JSX.Element> {
           <nav className="space-x-1">
             {session?.user ? (
               <DropdownMenu>
-                {/* <DropdownMenuTrigger
+                <DropdownMenuTrigger
                   asChild
                   className={cn(
                     buttonVariants({ variant: "user", size: "icon" }),
@@ -113,7 +112,7 @@ export async function Header(): Promise<JSX.Element> {
                   <DropdownMenuItem asChild>
                     <SignOutButton />
                   </DropdownMenuItem>
-                </DropdownMenuContent> */}
+                </DropdownMenuContent>
               </DropdownMenu>
             ) : (
               <Link
