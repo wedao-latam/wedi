@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import { Header } from "@/components/nav/header"
 
 interface LandingLayoutProps {
   children: React.ReactNode
@@ -11,7 +10,7 @@ export default function LandingLayout({
 }: LandingLayoutProps): JSX.Element {
   return (
     <div className="flex flex-col overflow-hidden">
-      <Header />
+      {/* <Header /> */}
       <main className="flex-1">{children}</main>
       {/* <SiteFooter /> */}
     </div>

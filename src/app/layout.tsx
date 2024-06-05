@@ -14,7 +14,8 @@ import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider"
 import { ThemeProvider } from "@/providers/theme-provider"
 
 import { SiteFooter } from "@/components/layout/site-footer"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { Header } from "@/components/nav/header"
+// import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { Toaster } from "@/components/ui/toaster"
 
 export const viewport: Viewport = {
@@ -103,14 +104,14 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
             enableSystem
             disableTransitionOnChange
           >
+            <Header/>
             {children}
             <Toaster />
             <Analytics />
-            <TailwindIndicator />
+            {/* <TailwindIndicator /> */}
+            <SiteFooter className="border-t" />
           </ThemeProvider>
         </SmoothScrollProvider>
-
-        <SiteFooter className="border-t" />
       </body>
     </html>
   )

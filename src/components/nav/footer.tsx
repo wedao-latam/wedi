@@ -70,7 +70,7 @@ export function Footer(): JSX.Element {
               Broomva Tech.
             </Link>{" "}
             <span className="hidden md:inline-flex">
-              A WeDAO Lataml Fintech Cell, 2024. All rights reserved. Made with love in 🇨🇴 @wedao-latam | @broomva-tech
+              A WeDAO Lataml Fintech Cell, 2024. All rights reserved. Made with love in 🇨🇴 @wedao-latam | @broomva_tech
             </span>
           </Balancer>
         </p>

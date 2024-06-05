@@ -97,7 +97,21 @@ export function HeroSection(): JSX.Element {
 
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            See the developments of Wedi. Start your journey with us!
+            Watch the developments of Wedi {" "}
+            <Link
+              href={siteConfig.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-foreground underline-offset-4 transition-all hover:underline"
+            >
+              Github
+            </Link>{" "} and {" "}
+            <Link
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-foreground underline-offset-4 transition-all hover:underline"
+            > X. </Link>
           </Balancer>
         </h3>
 

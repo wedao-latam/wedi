@@ -84,7 +84,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             
             Made with love in 🇨🇴   {" "}
             <Link
-              href="https://twitter.com/broomva-tech"
+              href="https://twitter.com/broomva_tech"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
@@ -93,12 +93,12 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </Link>
             {" "}
             <Link
-              href="https://twitter.com/broomva-tech"
+              href="https://twitter.com/broomva_tech"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              @broomva-tech
+              @broomva_tech
             </Link>
           </p>
 

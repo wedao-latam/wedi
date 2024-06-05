@@ -1,5 +1,4 @@
 
-import { Header } from "@/components/nav/header";
 
 
 
@@ -40,7 +39,7 @@ export default async function DocsLayout({ children }: DocsLayoutProps) {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <Header/>
+      {/* <Header/> */}
         {/* <DocsSidebarNav items={docsConfig.sidebarNav} /> */}
       <div className="container flex-1">{children}</div>
       {/* <SiteFooter className="border-t" /> */}

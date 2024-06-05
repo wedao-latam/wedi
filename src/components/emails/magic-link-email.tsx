@@ -1,14 +1,14 @@
 
 import {
-  Body,
-  Button,
-  Container,
-  Head,
-  Html,
-  Preview,
-  Section,
-  Tailwind,
-  Text,
+    Body,
+    Button,
+    Container,
+    Head,
+    Html,
+    Preview,
+    Section,
+    Tailwind,
+    Text,
 } from "@react-email/components";
 
 import { siteConfig } from "@/config/site";
@@ -57,7 +57,7 @@ export function MagicLinkEmail({
             </Section>
             <Section>
               <Text className="text-xs">
-                @wedao-latam @broomva-tech 2024
+                @wedao-latam @broomva_tech 2024
               </Text>
             </Section>
           </Container>
