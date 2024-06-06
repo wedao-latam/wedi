@@ -37,7 +37,7 @@ Wedi leverages stablecoins and blockchain technology to provide a seamless platf
 
 ![Wedi Banner](./public/images/shared/wedi_banner_02.png)
 
-## Todos
+<!-- ## Todos
 
 - [ ] Documentation pages
 - [ ] Opt out from newsletter
@@ -49,7 +49,7 @@ Wedi leverages stablecoins and blockchain technology to provide a seamless platf
 - [ ] Improve performance and make Edge compatible
 - [ ] Add tests
 - [ ] Add a Docker configuration
-- [ ] Fix pricing and purchase last step
+- [ ] Fix pricing and purchase last step -->
 
 ## Installation
 
