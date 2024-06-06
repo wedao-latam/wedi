@@ -18,6 +18,8 @@ import { Header } from "@/components/nav/header"
 // import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { Toaster } from "@/components/ui/toaster"
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -108,6 +110,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
             {children}
             <Toaster />
             <Analytics />
+            <SpeedInsights/>
             {/* <TailwindIndicator /> */}
             <SiteFooter className="border-t" />
           </ThemeProvider>
