@@ -20,6 +20,13 @@ import { Toaster } from "@/components/ui/toaster"
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+
+import { FloatingNav } from "@/components/ui/floating-navbar"
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react"
+
+import { auth } from "@/auth"
+
+
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -72,11 +79,49 @@ export const metadata: Metadata = {
   manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
+export default async function RootLayout({ children }: RootLayoutProps): Promise<JSX.Element> {
+
+  const session = await auth();
+
+  const navItems = [
+    {
+      name: "Home",
+      link: "/",
+      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Dashboard",
+      link: "/dashboard",
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Pricing",
+      link: "/pricing",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Docs",
+      link: "/docs",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+    {
+      name: "Blog",
+      link: "/blog",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
+  ]
+
   // const { theme } = useTheme();
   return (
     
@@ -107,6 +152,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
             disableTransitionOnChange
           >
             <Header/>
+            {session?.user && <FloatingNav navItems={navItems}/>}
             {children}
             <Toaster />
             <Analytics />

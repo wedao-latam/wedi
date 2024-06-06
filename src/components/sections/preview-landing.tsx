@@ -10,7 +10,7 @@ export default function PreviewLanding() {
           <div className="relative aspect-video overflow-hidden rounded-xl border md:rounded-lg">
             <Image
               className="size-full object-cover object-center"
-              src="/images/shared/wedi_banner_01.png"
+              src="/images/shared/wedi_banner_06.png"
               alt="preview landing"
               width={2000}
               height={1000}

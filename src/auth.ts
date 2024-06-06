@@ -94,16 +94,3 @@ export const {
   
   ...authConfig,
 })
-
-
-
-
-// const {
-//   handlers: { GET, POST },
-//   auth,
-//   signIn,
-//   signOut,
-// } = NextAuth({
-//   adapter: CustomPrismaAdapter(prisma),
-//   // rest of the configuration...
-// })

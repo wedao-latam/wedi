@@ -4915,6 +4915,18 @@
   dependencies:
     "@t3-oss/env-core" "0.7.3"
 
+"@tabler/icons-react@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.5.0.tgz#71925d527bb50a3b5bb23cc0154acc8b0ed65214"
+  integrity sha512-bn05XKZV3ZfOv5Jr1FCTmVPOQGBVJoA4NefrnR919rqg6WGXAa08NovONHJGSuMxXUMV3b9Cni85diIW/E9yuw==
+  dependencies:
+    "@tabler/icons" "3.5.0"
+
+"@tabler/icons@3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.5.0.tgz#29d0dbf100c8cb392dd64f1fe8efdcfcd1f57e44"
+  integrity sha512-I53dC3ZSHQ2MZFGvDYJelfXm91L2bTTixS4w5jTAulLhHbCZso5Bih4Rk/NYZxlngLQMKHvEYwZQ+6w/WluKiA==
+
 "@tailwindcss/forms@^0.5.7":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.7.tgz#db5421f062a757b5f828bc9286ba626c6685e821"
@@ -11983,6 +11995,11 @@ next-contentlayer@^0.3.4:
   dependencies:
     "@contentlayer/core" "0.3.4"
     "@contentlayer/utils" "0.3.4"
+
+next-redirect@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/next-redirect/-/next-redirect-1.0.1.tgz#eb84ba12f5e1d7ee37fed7088d56ea747b4cedf2"
+  integrity sha512-2tphWVvECdHy3I5cPN+4oIxW4vbSD+Qsde0bPwXKB+98FVhmh5uaKrDiCeBzH+AEGTl2tMEOyeT1I9EOhVoLWQ==
 
 next-themes@^0.3.0:
   version "0.3.0"
