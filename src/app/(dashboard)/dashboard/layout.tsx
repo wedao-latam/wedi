@@ -1,7 +1,6 @@
 import { DashboardNav } from "@/components/layout/nav";
 import { dashboardConfig } from "@/config/dashboard";
 // import { NavBar } from "@/components/layout/navbar";
-import { Header } from "@/components/nav/header";
 // import { SiteFooter } from "@/components/layout/site-footer";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 
@@ -13,7 +12,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col space-y-6">
       {/* <NavBar items={dashboardConfig.mainNav} scroll={false} /> */}
-      < Header />
+      {/* < Header /> */}
 
       <MaxWidthWrapper className="min-h-svh">
         <div className="grid flex-1 gap-20 md:grid-cols-[200px_1fr]">
