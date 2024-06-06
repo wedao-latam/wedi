@@ -36,12 +36,12 @@ export function HeroSection(): JSX.Element {
     <section
       id="newsletter-section"
       aria-label="newsletter section"
-      className="w-full  py-12"
+      className="w-full  py-8"
     >
 
       <div className="container flex flex-col items-center gap-4 text-center">
 
-      <div className="flex flex-row border-border text-muted-foreground text-sm border-2 rounded-full p-3 bg-blue-300/40">
+      <div className="flex flex-row border-border text-muted-foreground text-sm border-2 rounded-full p-3 bg-blue-300/20">
 					🚀 We're launching a new payments plaform! Join us!
 				</div>
 
@@ -61,10 +61,10 @@ export function HeroSection(): JSX.Element {
         </div>
 
         <WaitlistSection />
-        
-      <div className="container flex max-w-6xl flex-col items-center justify-center gap-4 mt-2 w-full md:mt-1 py-4">
 
-    
+        <div className="z-10 flex animate-fade-up flex-wrap justify-center gap-6 sm:flex-row">
+
+        <div className="container flex max-w-6xl flex-row flex-wrap items-center justify-center gap-4 mt-2 w-full md:mt-1 py-4">
 
         {gitHubStars ? (
           <Link
@@ -104,6 +104,10 @@ export function HeroSection(): JSX.Element {
             Join the closed beta waitlist
           </Link>
 
+          </div>
+          
+
+          
         <h3 className="max-w-2xl animate-fade-up text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
             Watch the developments of Wedi on {" "}
@@ -126,13 +130,8 @@ export function HeroSection(): JSX.Element {
             {" "}!  🐓  🚀  ☄️
         </h3>
 
-        <div className="z-10 flex animate-fade-up flex-col justify-center gap-4 sm:flex-row">
           
-
           
-
-          
-          </div>
         </div>
 
         
