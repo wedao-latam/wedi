@@ -52,7 +52,7 @@ export function HeroSection(): JSX.Element {
           Save and Pay in {" "}
             <FlipWords words={words} /> 
             <br />
-            Spend local like a {" "}
+            Spend as a local with {" "}
             <span className="bg-gradient-to-r from-green-400 to-blue-800 bg-clip-text font-extrabold text-transparent">
               Wedi 🔥
             </span>
