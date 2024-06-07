@@ -11,6 +11,6 @@ export async function GET() {
   });
 }
 
-export async function GET_JSON() {
-  return NextResponse.json(swaggerSpec);
-}
+// export async function GET_JSON() {
+//   return NextResponse.json(swaggerSpec);
+// }
