@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.1](https://github.com/wedao-latam/wedi/compare/v1.0.0...v1.0.1) (2024-06-29)
+
+
+### Bug Fixes
+
+* added swagger api docs and circle user and wallets routes ([aa9dfd4](https://github.com/wedao-latam/wedi/commit/aa9dfd480b58a42e8f585e1476a047c176fb2129))
+* added talent benefits page ([0e1e02c](https://github.com/wedao-latam/wedi/commit/0e1e02cbf6b1c6688bda26172c0d6219bd954b73))
+* removed prismic ([10fc1fa](https://github.com/wedao-latam/wedi/commit/10fc1faaf2ee5b65f00d626dbaa869f2601986d0))
+* updated GET_JSON in api docs route ([1e9dd38](https://github.com/wedao-latam/wedi/commit/1e9dd38d835c977179c597edf5eb9e5d3c455123))
+* updated gitignore ([1b9a048](https://github.com/wedao-latam/wedi/commit/1b9a04828fe8ee01b41b690d8aea10b19317c450))
+* updated readme todo list ([777dd12](https://github.com/wedao-latam/wedi/commit/777dd1263e563ac193ab299f999a2f9351de3e58))
+
 ## 1.0.0 (2024-06-06)
 
 
